@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0cb147038e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/ESTILOS/style.css">
+    <link rel="stylesheet" href="/ESTILOS/carrito.css">
+    <link rel="stylesheet" href="/ESTILOS/notificacion.css">
+</head>
+
+<body>
+
+    <header id="barra">
+      
+
+        <ul id="main">
+            <li id="carta"><i id="icon" class="fa fa-hand-o-right" aria-hidden="true"></i><a href="#nuestra_carta">Nuestra carta</a></li>
+            <li id="promos"><i id="icon" class="fa fa-hand-o-right" aria-hidden="true"></i><a href="#">Nuestras promos</a></li>
+            <!-- <li id="login"><i id="icon" class="fa fa-sign-in" aria-hidden="true"></i>Login</li> -->
+            <a href="#carrito_menu"><button id="carrito"><i id="icon" class="fa fa-sign-in" aria-hidden="true"></i>Carrito</button></a>
+        </ul>
+    </header>
+
+
+
+                    <!-- SLIDER -->
+    <section id="slider_caja">
+        <h1>¡Bienvenido a Big Coffe!</h1>
+        <img name = "slider" width="100%" height="1300px">
+
+        
+                    <!-- BUSCADOR -->
+        <section id="buscador">
+            <input type="search" name="s" id="search" placeholder="BUSCAR PRODUCTO"><i id="icon_search" class="fa fa-search" aria-hidden="true"></i>
+
+        </section>
+
+        <button id="bajar"><i class="fa fa-hand-o-down" aria-hidden="true" id="icon_bajar"></i><a href="#somos">bajar</a></button>
+    </section>
+
+    
+
+                    <!-- NOTIFICACION  -->
+    <div id="agregado_carrito">
+        <span>¡Se agregó al carrito un nuevo producto!</span>
+    </div>
+
+
+
+                <!-- SOBRE NOSOTROS -->
+<article id="quienes_somos">
+    <h2 id="somos">Quiénes somos</h2>
+    <p>Somos una empresa especializada de café en pleno proceso. <br>
+    ¡Queremos formar parte de los mejores cafés de Rosario! <br> 
+    de la mano de baristas vas a poder disfrutar de un café texturado y sabroso. <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus aut <br>
+     sequi quas sapiente eos, excepturi illum neque debitis voluptatum maxime reiciendis quasi, <br>
+     repudiandae inventore maiores, quaerat praesentium impedit sed.
+    Explicabo, commodi veritatis rerum ullam incidunt, odio deleniti <br>
+     architecto alias a et quae amet expedita, non harum. <br>
+     Quo, reprehenderit dolores. Assumenda deleniti, ducimus eligendi <br>
+      dolore accusantium et autem optio nisi! <br>
+    Repellat ipsa odio omnis in nostrum, excepturi voluptatibus quo vero non fugit maxime repudiandae <br>
+     quod sed quis sint nulla, distinctio architecto repellendus quas voluptas dolore. Ipsa eaque atque delectus itaque! <br>
+    In quaerat est quo reprehenderit, minima possimus labore, odio architecto nisi consectetur recusandae repellat reiciendis <br>
+     quidem natus quos saepe mollitia libero odit, laboriosam optio fuga aliquid debitis maxime. Expedita, eveniet?</p>
+
+</article>
+
+
+
+            <!-- CAFETERIA -->
+
+    <article id="cafeteria">
+        <h3>Nuestra carta</h3> 
+        <section id="nuestra_carta">
+             
+
+            <div id="cafe_card" class="card">
+                <span class="span_card" >Café c/s leche doble $120</span>
+                <div class="img_card"></div>
+                <button id="btn_cafe">comprar</button>
+            </div>
+
+         
+
+            <div id="matecocido_card" class="card">
+               <span class="span_card"> Matecocido / té $100</span>
+                <div class="img_card_te"></div>
+                <button id="btn_matecocido">comprar</button>
+            </div>
+
+
+            <div id="capuccino" class="card">
+                <span class="span_card">Capuccino $140</span>
+                <div class="img_card_capuccino"></div>
+                <button id="btn_capuccino">comprar</button>
+            </div>
+            
+            <div id="medialunas_card" class="card">
+                <span class="span_card">Medialunas dulces/saladas $80 c/u</span>
+                <div class="img_card_medialunas"></div>
+                <button id="btn_medialunas">comprar</button>
+            </div>
+
+            <div id="tostado_card" class="card">
+                <span class="span_card">Tostado $300</span>
+                <div class="img_card_tostado"></div>
+                <button id="btn_tostado">comprar</button>
+            </div>
+
+            <div id="carlito_card" class="card">
+                <span class="span_card">Carlito $350</span>
+                <div class="img_card_carlito"></div>
+                <button id="btn_carlito">comprar</button>
+            </div>
+
+           
+
+           
+        </section>
+
+             <!-- PROMOS -->
+
+        <section id="promos">
+            <button id="prom1">Café con leche + 2 medialunas $220</button> 
+            <button id="prom2">Café con leche + tostadas de campo $300</button>
+            <button id="prom3">Café con leche + tostado + jugo de naranja $390</button>
+            <button id="volver_atras" onclick="volverAtras()">Volver atrás</button>
+     
+         </section>
+         
+     
+    </article>
+
+
+    
+
+          <!--CARRITO OCULTO-->
+
+          <div id="carrito_menu">
+        
+        </div>
+        <div id="botones">
+        <button id="ver_total">Ver total</button>
+        <button id="salir">Salir</button>
+        </div>   
+       
+
+   
+    <script src="/JS/carrito.js"></script>
+    <script src="/JS/slider.js"></script>
+    <script src="/JS/buscador.js"></script>
+    <script src="/JS/local.js"></script>
+</body>
+</html>

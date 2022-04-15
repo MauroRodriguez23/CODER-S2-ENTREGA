@@ -1,0 +1,383 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ 
+}
+
+body {
+    background-color: rgb(24, 37, 44);
+}
+
+
+h1 {
+    
+    position: relative;
+    top: 200px;
+ 
+    font-size: 65px;
+    font-weight: bolder;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+  
+    color: white;
+}
+
+
+
+
+        /* NAVEGACION  */
+
+#barra {
+    width: 100%;
+    height: 85px;
+    background: rgb(36, 26, 13);
+    border-bottom: solid 1px #ccc;
+   
+    display: flex;
+    justify-content: flex-end;
+    
+    position: fixed;
+   
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+
+
+
+#main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right: 100px;
+}
+
+#icon {
+
+    color: white;
+    margin-right: 20px;
+}
+
+
+#barra ul li {
+    margin-left: 50px;
+    width: 200px;
+    height: 80px;
+   
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: wheat;
+    font-size: 22px;
+    
+}
+
+
+#barra ul li a {
+    text-decoration: none;
+    color: wheat;
+}
+
+    /* BUSCADOR */ 
+
+#buscador {
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -700px;
+}
+
+#search {
+    background-color: black;
+    border-radius: 3%;
+    color: wheat;
+    font-size: 25px;
+    width: 400px;
+    padding: 25px;
+
+}
+
+#icon_search{
+
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 30px;
+    
+    font-size: 30px;
+    color: #ccc;
+}
+
+#icon_search:hover {
+    cursor: pointer;
+}
+
+
+
+
+    /* ICONO PARA BAJAR */
+
+#icon_bajar {
+    position: absolute;
+    top: -70px;
+    left: 39px;
+
+    font-size: 35px;
+    
+  
+}
+
+
+#bajar {
+    padding: 25px;
+    height: 25px;
+    position: relative;
+    top: -80px;    
+   
+    display: flex;
+    align-items: center;
+    margin: auto;
+    
+    color: white;
+    font-size: 20px;
+   
+    text-transform: uppercase;
+
+    background-color: transparent;
+   
+    border: solid 1px #ccc;
+    border-radius: 10%;
+}
+
+#bajar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+#quienes_somos {
+    border: solid 1px red;
+    font-size: 23px;
+    color: white;
+    letter-spacing: 1px;
+    width: 1800px;
+    height:500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    
+}
+
+
+h2 {
+    font-size: 55px;
+}
+
+
+#promos {
+    display: none;
+}
+
+
+
+
+
+
+#cafeteria {
+ 
+    position: relative;
+    top: 700px;
+    
+}
+
+
+
+h3 {
+    font-size: 55px;
+ 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    color: white;
+}
+
+#nuestra_carta {
+    width: 1800px;
+    height: 1000px;
+ 
+    margin: auto;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+    border-top: solid 1px #ccc;
+    
+    
+}
+
+
+ /* INICIO DE CARDS */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  
+    
+
+
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    border-radius: 5%;
+
+    border: solid 1px rgb(92, 63, 63);
+   
+    background-color: white;
+
+    overflow: hidden;
+    transition: 300ms ease-out;
+}
+
+
+
+.img_card{
+    background-image: url(/IMG/cafe.jpg);
+    background-position: -30px -200px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 360px;
+    background-size: cover;
+    margin: auto;
+    
+    
+    
+}
+
+.img_card_capuccino{
+    background-image: url(/IMG/capuccino.jpeg);
+    background-position: 0px -60px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 360px;
+    background-size: cover;
+    margin: auto;
+    
+}
+
+.img_card_tostado{
+    background-image: url(/IMG/tostado.jpg);
+    background-position: -20px 0px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 360px;
+    background-size: cover;
+    margin: auto;
+    
+}
+
+
+.img_card_te{
+    background-image: url(/IMG/te.jpg);
+    background-position: -20px 0px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 360px;
+    background-size: cover;
+    margin: auto;
+    
+}
+
+
+.img_card_medialunas{
+    background-image: url(/IMG/medialuna.jpg);
+    background-position: -45px -70px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 360px;
+    background-size: cover;
+    margin: auto;
+    
+}
+
+.img_card_carlito{
+    background-image: url(/IMG/carlito.jpg);
+    background-position: -25px 0px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 360px;
+    background-size: cover;
+    margin: auto;
+    
+}
+
+
+
+
+
+
+.span_card {
+    color: wheat;
+    font-size: 25px;
+    position: relative;
+    
+    box-shadow: 2px 2px 5px 1px #ccc;
+    padding: 15px;
+    background-color: rgb(36, 26, 13);
+    
+}
+
+
+
+
+.card:hover {
+    box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
+    -webkit-box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
+    -moz-box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
+
+    transform: scale(1.1);
+  
+
+    cursor: pointer;
+}
+
+
+
+    /*EFECTO DE BOTONES DE COMPRAR*/
+
+#btn_cafe:hover, #btn_matecocido:hover, #btn_capuccino:hover, #btn_medialunas:hover, #btn_tostado:hover, #btn_carlito:hover {
+    color: green;
+    cursor: pointer;
+}
+
+#btn_cafe, #btn_matecocido, #btn_capuccino, #btn_medialunas, #btn_tostado, #btn_carlito {
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    border-top: solid 1px wheat;
+    background: black;
+   text-transform: uppercase;
+}
+
+
+
+
+
