@@ -33,6 +33,9 @@ objCafeteria = JSON.parse;
 precioCafeteria = JSON.parse;
 
 
+localStorage.setItem('obj', objCafeteria);
+
+
 
 
 const totalCompro = [];
