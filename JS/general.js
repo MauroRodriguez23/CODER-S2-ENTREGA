@@ -29,11 +29,11 @@ const precioCafeteria = {
     precioCarlito: 350
 }
 
-objCafeteria = JSON.parse;
-precioCafeteria = JSON.parse;
+// objCafeteria = JSON.parse;
+// precioCafeteria = JSON.parse;
 
 
-localStorage.setItem('obj', objCafeteria);
+
 
 
 
@@ -62,13 +62,22 @@ function clickCafe () {
     totalPrecio.push(precioCafeteria.precioCafe);
 
     
+
     let imprime_resultado = document.getElementById("carrito_menu");
     imprime_resultado.innerText = totalCompro.reduce(reducer);
 
-    
+    localStorage.setItem('guardaCafeteria', 'btn_cafe');
 }
 
 
+function guardado_carrito () {
+
+    const localCafeteria = localStorage.getItem('guardaCafeteria');
+    console.log(localCafeteria);
+    // imprime_resultado.innerText = totalCompro.reduce(reducer);
+}
+
+guardado_carrito();
 
 /* BOTON MATECOCIDO */
 
