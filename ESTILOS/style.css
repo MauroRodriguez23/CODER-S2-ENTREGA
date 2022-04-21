@@ -363,12 +363,13 @@ h3 {
 
     /*EFECTO DE BOTONES DE COMPRAR*/
 
-#btn_cafe:hover, #btn_matecocido:hover, #btn_capuccino:hover, #btn_medialunas:hover, #btn_tostado:hover, #btn_carlito:hover {
+.btn_comprar:hover{
     color: green;
     cursor: pointer;
 }
 
-#btn_cafe, #btn_matecocido, #btn_capuccino, #btn_medialunas, #btn_tostado, #btn_carlito {
+
+.btn_comprar{
     font-size: 20px;
     color: white;
     padding: 15px;
