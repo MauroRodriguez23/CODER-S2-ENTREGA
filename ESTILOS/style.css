@@ -11,6 +11,7 @@ body {
 }
 
 
+
 h1 {
     
     position: relative;
@@ -201,7 +202,7 @@ h2 {
  
     position: relative;
     top: 700px;
-    
+  
 }
 
 
@@ -218,132 +219,91 @@ h3 {
 
 #nuestra_carta {
     width: 1800px;
-    height: 1000px;
+    height: 1400px;
  
     margin: auto;
     display: flex;
 
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: space-around;
+
 
     border-top: solid 1px #ccc;
-    
-    
+    overflow: hidden;
+
 }
 
 
  /* INICIO DE CARDS */
 
 .card {
+   
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-  
+    align-items: center;
     
-
-
-    text-align: center;
-    width: 350px;
-    height: 450px;
     border-radius: 5%;
-
-    border: solid 1px rgb(92, 63, 63);
-   
-    background-color: white;
-
     overflow: hidden;
-    transition: 300ms ease-out;
+    transition: 500ms all;
+  
 }
 
-
-
-.img_card{
-    background-image: url(/IMG/cafe.jpg);
-    background-position: -30px -200px;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 360px;
-    background-size: cover;
-    margin: auto;
-    
-    
-    
+.card:hover{
+    height: 770px;
 }
-
-.img_card_capuccino{
-    background-image: url(/IMG/capuccino.jpeg);
-    background-position: 0px -60px;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 360px;
-    background-size: cover;
-    margin: auto;
-    
-}
-
-.img_card_tostado{
-    background-image: url(/IMG/tostado.jpg);
-    background-position: -20px 0px;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 360px;
-    background-size: cover;
-    margin: auto;
-    
-}
-
-
-.img_card_te{
-    background-image: url(/IMG/te.jpg);
-    background-position: -20px 0px;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 360px;
-    background-size: cover;
-    margin: auto;
-    
-}
-
-
-.img_card_medialunas{
-    background-image: url(/IMG/medialuna.jpg);
-    background-position: -45px -70px;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 360px;
-    background-size: cover;
-    margin: auto;
-    
-}
-
-.img_card_carlito{
-    background-image: url(/IMG/carlito.jpg);
-    background-position: -25px 0px;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 360px;
-    background-size: cover;
-    margin: auto;
-    
-}
-
-
-
-
-
 
 .span_card {
     color: wheat;
-    font-size: 25px;
-    position: relative;
-    
-    box-shadow: 2px 2px 5px 1px #ccc;
-    padding: 15px;
-    background-color: rgb(36, 26, 13);
-    
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 500px;
 }
+
+
+  /*CARACTERISTICAS DE LAS CARDS*/
+
+  .parrafo_caracteristicas {
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+    border-bottom: solid 1px rgb(32, 62, 87);
+    border-radius: 2%;
+    text-align: center;
+}
+
+.btn_comprar {
+    width: 200px;
+    border-radius: 5%;
+    font-size: 17px;
+    letter-spacing: 2px;
+    border: solid 1px rgb(0, 140, 255);
+    background-color: transparent;
+    color: wheat;
+    text-transform: uppercase;
+    padding: 15px;
+   
+}
+
+.btn_comprar:focus{
+    color: green;
+}
+
+
+.img_card img {
+    width: 500px;
+    height: 500px;
+    
+    position: relative;
+   
+ 
+}
+
 
 
 
@@ -352,31 +312,17 @@ h3 {
     box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
     -webkit-box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
     -moz-box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
-
-    transform: scale(1.1);
+    /* width: 1750px;
+    height: 500px; */
   
-
-    cursor: pointer;
 }
+
 
 
 
     /*EFECTO DE BOTONES DE COMPRAR*/
 
-.btn_comprar:hover{
-    color: green;
-    cursor: pointer;
-}
 
-
-.btn_comprar{
-    font-size: 20px;
-    color: white;
-    padding: 15px;
-    border-top: solid 1px wheat;
-    background: black;
-   text-transform: uppercase;
-}
 
 
 
