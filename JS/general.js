@@ -4,6 +4,7 @@ if(!JSON.parse(localStorage.getItem("carrito"))) {
 const carritoInicial = JSON.parse(localStorage.getItem("carrito"));
 const carrito = carritoInicial;
 
+
     // ARRAY CAFETERIA
 const objCafeteria = [
     {producto: "Café c/s leche doble",
@@ -85,7 +86,8 @@ function clickCafe (e) {
    
     let imprime_resultado = document.getElementById("carrito_menu");
     imprime_resultado.innerText = nombreProducto;
-    
+   
+
      /*LIBRERIA PARA PONER ALERTS*/
     Swal.fire({
         icon: 'success',
@@ -100,13 +102,16 @@ function clickCafe (e) {
     })    
 }
 
+
 /* VER TOTAL */ 
     let ver_total = document.getElementById("ver_total");
     ver_total.addEventListener("click", verTotal);
 
     function verTotal() {
-    let imprime_resultado = document.getElementById("carrito_menu");
+        
+   
 }
+
 
 
 // /* SALIR */
