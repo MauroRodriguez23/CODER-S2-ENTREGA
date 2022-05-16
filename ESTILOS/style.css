@@ -22,9 +22,7 @@
 
 body {
     background-color: rgb(24, 37, 44);
-    box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-    -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-    -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+
 }
 
 
@@ -59,7 +57,7 @@ h1 {
     background-size: cover;
     text-align: center;
     width: 100%;
-    height: 1500px;
+    height: 1900px;
      /* background-image: linear-gradient(rgba(4,5,10, 0.75), rgba(4,5,10,0.75)), */
     
 }
@@ -120,6 +118,7 @@ h1 {
 #buscador {
     border: solid 4px rgb(247, 244, 244);
     border-radius: 250px;
+    border: none;
 
     width: 15%;
     height: 100px;
@@ -130,10 +129,12 @@ h1 {
     justify-content: center;
     align-items: center;
 
-    box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
-    -webkit-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
-    -moz-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
     
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
+    -webkit-box-shadow: inset 1px 10px 23px 7px rgba(247, 243, 243, 0.75);
+    -moz-box-shadow: inset 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
     opacity: 0.7;
     transition: all 500ms;
 }
@@ -143,13 +144,12 @@ h1 {
     opacity: 1;
     width: 35%;
     height: 120px;
-    box-shadow: none;
 }
 
 #search {
     border-radius: 250px;
-    
-   border: none;
+    border: none;
+ 
     color: white;
     font-size: 27px;
     text-transform: uppercase;
@@ -161,21 +161,22 @@ h1 {
     width: 100%;
     height: 100px;
     
-  
-   
-    
     opacity: 0.7;
    transition: all 500ms;
+}
+
+#search::placeholder {
+    color: black;
+    font-weight: bold;
 }
 
 #search:hover {
     cursor: pointer;
     opacity: 1;
-    border: none;
     width: 95%;
     height: 70px;
- 
 }
+
 
 
 #icon_search {
@@ -198,7 +199,7 @@ h1 {
     width: 95%;
     height: 70px;
     z-index: 100;
-    
+   
 }
 
 
@@ -212,14 +213,13 @@ h1 {
     border: none;
     background-color: transparent;
 
-
-    color: #ccc;
     box-shadow: inset 1px 1px 23px 7px rgba(153,95,95,0.75);
     -webkit-box-shadow: inset 1px 10px 23px 7px rgba(153,95,95,0.75);
     -moz-box-shadow: inset 1px 1px 23px 7px rgba(153,95,95,0.75);
     font-size: 22px;
     text-transform: uppercase;
 
+    color: #ccc;
     font-family: family_header;
     letter-spacing: 1px;
     transition: all 300ms;
@@ -251,55 +251,103 @@ h1 {
 
 
 
+
         /* QUIENES SOMOS */
 
 #section1 {
     
     background-image:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
      url(/IMG/fondo.jpg);
-    height: 1600px;
+    width: 100%; 
+    height: 1900px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 0px auto;
 }
 
-#quienes_somos {
+.preguntas {
     border: solid 1px #ccc;
     border-radius: 30px;
     font-size: 23px;
-    color: white;
+
+    color: transparent;
     letter-spacing: 1px;
-    width: 50%;
-    height:600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 30%;
+    height:460px;
     text-align: center;
-    position: relative;
-    top: 15px;
-   
-   
-    border-radius: 30px;
-   
     background-image: linear-gradient(rgba(4,5,10, 0.75), rgba(4,5,10,0.75)),
     url(/IMG/fondo.jpg);
+
+    filter: blur(1px);
+        -moz-filter: blur(1px);
+        -webkit-filter: blur(1px);
+        -o-filter: blur(1px);
+        -ms-filter: blur(0px); 
+        
+        transition: all 300ms;
+
+    padding: 15px;
+}
+
+.preguntas h3 {
+    color: bisque;
+}
+#caja_preguntas {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1900px;
+    position: relative;
+    left: 100px;
+    top: -350px;
+
+}
+
+.preguntas:hover {
+    filter: blur(0px);
+        -moz-filter: blur(0px);
+        -webkit-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px); 
+        cursor: pointer;
+        color: white;
+
+        box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
+    -webkit-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
+    -moz-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
 }
 
 
+#quienes_somos h3 {
+    position: relative;
+    top: 0px;
+   
+}
 
 
+#art h3 {
+    position: relative;
+    top: 0px;
+}
+
+
+#se_hace h3 {
+    position: relative;
+    top: 0px;
+
+}
             /* SLIDER */
 
 .slider {
-  
+    
     border-radius: 30px;
     position: relative;
+  
     background-size: cover;
-    top: 100px;
+    margin: 0px auto;
 }            
 
 h2 {
@@ -312,18 +360,41 @@ h2 {
 }
 
 
+.medio_cards {
+    width: 1200px;
+    height: 120px;
+    
+    position: absolute;
+    left: 650px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+   border-bottom: solid 3px #ccc;
+ 
+}
+
+.span_medio {
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
 
 
 
 
 #cafeteria {
- 
+    background-image: linear-gradient(rgba(4,5,10, 0.65), rgba(4,5,10,0.65)),
+    url(/IMG/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    top: 700px;
-  
+    top: -550px;
+    height: 1350px;
+    
 }
-
-
 
 h3 {
     font-size: 55px;
@@ -348,18 +419,21 @@ h3 {
 
 
     border-top: solid 1px #ccc;
-    overflow: hidden;
 
+
+    overflow: hidden;
+   
 }
 
 
  /* INICIO DE CARDS */
 
+
 .card {
    
     margin-top: 50px;
     width: 500px;
-    height: 500px;
+    height: 30px;
     
     display: flex;
     flex-direction: column;
@@ -368,12 +442,23 @@ h3 {
     border-radius: 5%;
     overflow: hidden;
     transition: 500ms all;
+
+    box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
+    -webkit-box-shadow: 1px 10px 23px 7px rgba(247, 243, 243, 0.75);
+    -moz-box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
   
+   position: relative;
+   top: 140px;
+ 
 }
 
 .card:hover{
     cursor: pointer;
     height: 770px;
+    box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+    -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+    -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+   
 }
 
 .span_card {
@@ -382,6 +467,9 @@ h3 {
     justify-content: center;
     font-size: 30px;
     width: 500px;
+    box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+    -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+    -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
 }
 
 
@@ -391,7 +479,7 @@ h3 {
     font-size: 25px;
     color: white;
     margin: 10px;
-    border-bottom: solid 1px rgb(32, 62, 87);
+  
     border-radius: 2%;
     text-align: center;
 }
@@ -401,7 +489,11 @@ h3 {
     border-radius: 5%;
     font-size: 17px;
     letter-spacing: 2px;
-    border: solid 1px rgb(0, 140, 255);
+    border: solid 5px rgba(153,95,95,0.75);
+    box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+    -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+    -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+
     background-color: transparent;
     color: wheat;
     text-transform: uppercase;
@@ -424,21 +516,6 @@ h3 {
 }
 
 
-
-
-
-.card:hover {
-    box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
-    -webkit-box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
-    -moz-box-shadow: -3px 9px 49px 0px rgba(227,187,31,0.75);
-    /* width: 1750px;
-    height: 500px; */
-  
-}
-
-
-
-
     /*EFECTO DE BOTONES DE COMPRAR*/
 
 
@@ -447,3 +524,4 @@ h3 {
 
 
 
+  

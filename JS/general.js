@@ -61,6 +61,7 @@ const objCafeteria = [
 for (let i = 0; i < objCafeteria.length; i++) {
     const element = objCafeteria[i];
     const div = document.createElement("div");
+    const div2 = document.createElement("div");
     div.classList.add("card");
     div.setAttribute("id", element.id)
     const p = document.createElement("p");
@@ -69,12 +70,14 @@ for (let i = 0; i < objCafeteria.length; i++) {
                      <div class="img_card">
                         <img src=${element.img} alt="fotoProducto" />
                      </div>
+                    
                      <p class="parrafo_caracteristicas">${element.p}</p>
                     
                      <button class="btn_comprar">comprar</button>`;
     const section = document.getElementById("nuestra_carta"); 
     section.appendChild(div);
     section.appendChild(p);
+   
 }
 
 
