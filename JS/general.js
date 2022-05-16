@@ -61,7 +61,7 @@ const objCafeteria = [
 for (let i = 0; i < objCafeteria.length; i++) {
     const element = objCafeteria[i];
     const div = document.createElement("div");
-    const div2 = document.createElement("div");
+    
     div.classList.add("card");
     div.setAttribute("id", element.id)
     const p = document.createElement("p");
@@ -95,16 +95,16 @@ const productoss = [];
 const total = [];
 const reducer = (accumulator, curr) => accumulator + curr;
 
-
+let carrito_ext = "/DOCUMENTOS/carrito.html"
 
 let comprar = document.getElementsByClassName("btn_comprar");
 
 for (let i = 0; i < comprar.length; i++) {
     const element = comprar[i];
-    element.addEventListener("click", clickCafe);
+    element.addEventListener("click", clickComprar);
 }
 
-function clickCafe (e) {
+function clickComprar (e) {
     const evento = e.target
     const nombreProducto = evento.parentNode.getAttribute('id');
     
@@ -139,24 +139,59 @@ function clickCafe (e) {
   
 
 
+    // let imprime_resultado = document.getElementById("carrito_menu");
+    let imprime_numero = document.getElementById("carrito");
+    imprime_numero.innerText = "|1";
+
+    
     let imprime_resultado = document.getElementById("carrito_menu");
     imprime_resultado.innerText = productoss.reduce(reducer);
    
 
      /*LIBRERIA PARA PONER ALERTS*/
-    Swal.fire({
-        icon: 'success',
-        backdrop: 'rgb(24, 37, 44)',
-        imageWidth: 400,
-        imageHeight: 360,
-        background: 'black',
-        title: '¡Nuevo producto al carrito!',
-        showConfirmButton: false,
-        color: 'green',
-        timer: 1500
-    })    
+    // Swal.fire({
+    //     icon: 'success',
+    //     imageWidth: 400,
+    //     imageHeight: 360,
+    //     background: 'transparent',
+    //     title: '¡Nuevo producto al carrito!',
+    //     showConfirmButton: false,
+    //     color: 'green',
+    //     timer: 1500
+    // })    
 }
 
+
+    // CARRITO CLICK 
+
+    let carrito2 = document.getElementById("carrito");
+    carrito2.addEventListener("click", clickCarrito);
+
+    function clickCarrito() {
+        document.getElementById("nuestra_carta").style.display = 'none';
+        document.getElementById("section1").style.display = 'none';
+        document.getElementById("medio_cards").style.display = 'none';
+       
+     
+        
+        document.getElementById("carrito_menu").style.display = 'flex';
+        document.getElementById("botones").style.display = 'flex';
+    }
+
+
+    // CARRITO SALIR
+
+    let salir = document.getElementById("salir");
+    salir.addEventListener("click", clickSalir);
+
+    function clickSalir(){
+        document.getElementById("carrito_menu").style.display = 'none';
+        document.getElementById("botones").style.display = 'none';
+
+        document.getElementById("nuestra_carta").style.display = 'flex';
+        document.getElementById("section1").style.display = 'flex';
+        document.getElementById("medio_cards").style.display = 'flex';
+    }
 
 /* VER TOTAL */ 
     let ver_total = document.getElementById("ver_total");
@@ -167,11 +202,11 @@ function clickCafe (e) {
     // }
       // * Calcula el precio total teniendo en cuenta los productos repetidos
         // */
-       function calcularTotal() {
+    //    function calcularTotal() {
           
-           let imprime_resultado = document.getElementById("carrito_menu");
-           imprime_resultado.innerText = total.reduce(reducer);
-       }
+    //        let imprime_resultado = document.getElementById("carrito_menu");
+    //        imprime_resultado.innerText = total.reduce(reducer);
+    //    }
 
 
 

@@ -3,7 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
- 
+    
 }
 
 @font-face {
@@ -58,8 +58,7 @@ h1 {
     text-align: center;
     width: 100%;
     height: 1900px;
-     /* background-image: linear-gradient(rgba(4,5,10, 0.75), rgba(4,5,10,0.75)), */
-    
+        /* background-image: linear-gradient(rgba(4,5,10, 0.75), rgba(4,5,10,0.75)), */
 }
 
    
@@ -250,117 +249,7 @@ h1 {
 
 
 
-
-
-        /* QUIENES SOMOS */
-
-#section1 {
-    
-    background-image:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-     url(/IMG/fondo.jpg);
-    width: 100%; 
-    height: 1900px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.preguntas {
-    border: solid 1px #ccc;
-    border-radius: 30px;
-    font-size: 23px;
-
-    color: transparent;
-    letter-spacing: 1px;
-    width: 30%;
-    height:460px;
-    text-align: center;
-    background-image: linear-gradient(rgba(4,5,10, 0.75), rgba(4,5,10,0.75)),
-    url(/IMG/fondo.jpg);
-
-    filter: blur(1px);
-        -moz-filter: blur(1px);
-        -webkit-filter: blur(1px);
-        -o-filter: blur(1px);
-        -ms-filter: blur(0px); 
-        
-        transition: all 300ms;
-
-    padding: 15px;
-}
-
-.preguntas h3 {
-    color: bisque;
-}
-#caja_preguntas {
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1900px;
-    position: relative;
-    left: 100px;
-    top: -350px;
-
-}
-
-.preguntas:hover {
-    filter: blur(0px);
-        -moz-filter: blur(0px);
-        -webkit-filter: blur(0px);
-        -o-filter: blur(0px);
-        -ms-filter: blur(0px); 
-        cursor: pointer;
-        color: white;
-
-        box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
-    -webkit-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
-    -moz-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
-}
-
-
-#quienes_somos h3 {
-    position: relative;
-    top: 0px;
-   
-}
-
-
-#art h3 {
-    position: relative;
-    top: 0px;
-}
-
-
-#se_hace h3 {
-    position: relative;
-    top: 0px;
-
-}
-            /* SLIDER */
-
-.slider {
-    
-    border-radius: 30px;
-    position: relative;
-  
-    background-size: cover;
-    margin: 0px auto;
-}            
-
-h2 {
-    font-size: 55px;
-}
-
-
-#promos {
-    display: none;
-}
-
-
-.medio_cards {
+#medio_cards {
     width: 1200px;
     height: 120px;
     
@@ -516,6 +405,114 @@ h3 {
 }
 
 
+
+        /* QUIENES SOMOS */
+
+        #section1 {
+    
+            background-image:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+             url(/IMG/fondo.jpg);
+            width: 100%; 
+            height: 1900px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .preguntas {
+            border: solid 1px #ccc;
+            border-radius: 30px;
+            font-size: 23px;
+        
+            color: transparent;
+            letter-spacing: 1px;
+            width: 30%;
+            height:460px;
+            text-align: center;
+            background-image: linear-gradient(rgba(4,5,10, 0.75), rgba(4,5,10,0.75)),
+            url(/IMG/fondo.jpg);
+        
+            filter: blur(1px);
+                -moz-filter: blur(1px);
+                -webkit-filter: blur(1px);
+                -o-filter: blur(1px);
+                -ms-filter: blur(0px); 
+                
+                transition: all 300ms;
+        
+            padding: 15px;
+        }
+        
+        .preguntas h3 {
+            color: bisque;
+        }
+        #caja_preguntas {
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 1900px;
+            position: relative;
+            left: 100px;
+            top: -350px;
+        
+        }
+        
+        .preguntas:hover {
+            filter: blur(0px);
+                -moz-filter: blur(0px);
+                -webkit-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px); 
+                cursor: pointer;
+                color: white;
+        
+                box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
+            -webkit-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
+            -moz-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
+        }
+        
+        
+        #quienes_somos h3 {
+            position: relative;
+            top: 0px;
+           
+        }
+        
+        
+        #art h3 {
+            position: relative;
+            top: 0px;
+        }
+        
+        
+        #se_hace h3 {
+            position: relative;
+            top: 0px;
+        
+        }
+                    /* SLIDER */
+        
+        .slider {
+            
+            border-radius: 30px;
+            position: relative;
+          
+            background-size: cover;
+            margin: 0px auto;
+        }            
+        
+        h2 {
+            font-size: 55px;
+        }
+        
+        
+        #promos {
+            display: none;
+        }
+        
     /*EFECTO DE BOTONES DE COMPRAR*/
 
 
