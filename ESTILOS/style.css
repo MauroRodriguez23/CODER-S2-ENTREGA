@@ -207,7 +207,7 @@ h1 {
 
 
         /* BOTONES SUBIR Y BAJAR */
-#bajar, #bajar2, #subir {
+#bajar, #bajar2, #subir, #subir_abajo {
     position: relative;
     top: 500px;
     width: 150px;
@@ -229,7 +229,7 @@ h1 {
     
 }
 
-#subir:hover, #bajar:hover, #bajar2:hover {
+#subir:hover, #bajar:hover, #bajar2:hover,#subir_abajo:hover {
     box-shadow: inset 26px 35px 23px 17px rgba(153,95,95,0.75);
     -webkit-box-shadow: inset 16px 35px 23px 17px rgba(153,95,95,0.75);
     -moz-box-shadow: inset 26px 35px 33px 17px rgba(153,95,95,0.75);
@@ -260,6 +260,14 @@ h1 {
     position: absolute;
     top: 130px;
     left: 91%;
+}
+
+#subir_abajo {
+    position: absolute;
+    top: 750px;
+    right: 50%;
+    
+
 }
 
 
@@ -295,8 +303,9 @@ h1 {
     background-size: cover;
     position: relative;
     top: -550px;
-    height: 1400px;
+    /* height: 1400px; */
     
+    height: 1900px;
 }
 
 h3 {
@@ -349,7 +358,7 @@ h3 {
 
 .card:hover{
     cursor: pointer;
-    height: 675px;
+    height: 705px;
     box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
     -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
     -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
@@ -416,10 +425,11 @@ h3 {
 
         #section1 {
     
-            background-image:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-             url(/IMG/slider1.jpg);
+            /* background-image:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+             url(/IMG/slider1.jpg); */
+            
             width: 100%; 
-            height: 1900px;
+            height: 1300px;
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
@@ -427,9 +437,20 @@ h3 {
             align-items: center;
         }
 
+            /* SLIDER */
+
+        .slider {
+            position: absolute;
+            filter: blur(1px);
+            -moz-filter: blur(1px);
+            -webkit-filter: blur(1px);
+            -o-filter: blur(1px);
+            -ms-filter: blur(0px); 
+             
+        }
         #section1 h4 {
             position: absolute;
-            margin-bottom: 1600px;
+            margin-bottom: 1100px;
             border-bottom: solid #ccc;
             font-size: 55px;
            
@@ -445,7 +466,7 @@ h3 {
             align-items: center;
             width: 1900px;
             position: relative;
-            top: -350px;
+            
             
         }
         
@@ -532,16 +553,7 @@ h3 {
             top: 0px;
         
         }
-                    /* SLIDER */
-        
-        .slider {
             
-            border-radius: 30px;
-            position: relative;
-          
-            background-size: cover;
-            margin: 0px auto;
-        }            
         
         h2 {
             font-size: 55px;
@@ -556,8 +568,22 @@ h3 {
 
     
 
+#footer_name {
+    color: #ccc;
+    width: 120px;
+    height: 30px;
+    font-size: 22px;
+}
 
+footer {
+  
+    position: absolute;
+    left: 85%;
+    margin-top: 1200px;
+}
 
-
-
+#incrementa {
+    position: relative;
+    top: 200px;
+}
   

@@ -39,26 +39,27 @@ const objCafeteria = [
     idPrecio: 140,
     p: "El capuchino (del italiano cappuccino) <br> es una bebida nacida en Italia, <br> preparada con café expreso y <br> leche montada con vapor <br> para darle cremosidad."},
 
-    {producto: "Exprimido de naranja",
-    precio: 140,
-    img: "/IMG/cafe.jpg",
-    id: "Exprimido de naranja \n",
-    idPrecio: 140,
+    {producto: "Lagrima",
+    precio: 150,
+    img: "/IMG/lagrima.jpg",
+    id: "Lagrima \n",
+    idPrecio: 150,
+    p: "Si el café te gusta en sus versiones más suaves y cremosas, <br> una lágrima es la bebida caliente ideal para tí. <br> Es una bebida inspirada en el macciato pero con las proporciones al revés. <br> Alrededor de un 10% de café."},
+
+    {producto: "Licuado de banana",
+    precio: 160,
+    img: "/IMG/banana.jpg",
+    id: "Licuado de banana \n",
+    idPrecio: 160,
     p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
 
     {producto: "Exprimido de naranja",
     precio: 140,
-    img: "/IMG/cafe.jpg",
+    img: "/IMG/naranja.jpg",
     id: "Exprimido de naranja \n",
     idPrecio: 140,
-    p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
+    p: "El zumo de naranja exprimido puede ser incluido en una dieta con “comida real”, saludable y equilibrada. <br> Concretamente, se recomienda tomar 1 vaso al día de 250 ml."},
 
-    {producto: "Exprimido de naranja",
-    precio: 140,
-    img: "/IMG/cafe.jpg",
-    id: "Exprimido de naranja \n",
-    idPrecio: 140,
-    p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
 
 
 
@@ -99,50 +100,50 @@ for (let i = 0; i < objCafeteria.length; i++) {
                      </div>
                     
                      <p class="parrafo_caracteristicas">${element.p}</p>
+
+ 
                     
-                     <button class="btn_comprar">comprar</button>`;
+                     <button id="comprar2" class="btn_comprar">comprar</button>`;
     const section = document.getElementById("nuestra_carta"); 
     section.appendChild(div);
     section.appendChild(p);
-   
    
 
 }
 
 
-
-
 /* BOTON COMPRAR */
+let contador = 0;
 const productoss = [];
 const total = [];
 const reducer = (accumulator, curr) => accumulator + curr;
 
-let carrito_ext = "/DOCUMENTOS/carrito.html"
-
 let comprar = document.getElementsByClassName("btn_comprar");
+
 
 for (let i = 0; i < comprar.length; i++) {
     const element = comprar[i];
     element.addEventListener("click", clickComprar);
 }
 
+
+
 function clickComprar (e) {
     const evento = e.target
     const nombreProducto = evento.parentNode.getAttribute('id');
-    
+   
 
     function finderId(item) {
         return (item.id == nombreProducto);
     }
 
+    
 
     const producto = objCafeteria.find(finderId);
     productoss.push(nombreProducto);
     carrito.push(producto);
     localStorage.setItem("carrito",JSON.stringify(carrito));
 
-
-     
  //ACÁ TERMINA EL PRODUCTO
  
     
@@ -170,8 +171,6 @@ function clickComprar (e) {
     let imprime_numero2 = document.getElementById("carrito_cafeteria");
     imprime_numero2.innerText = "carrito" + " " + productoss.length;
 
-    let imprime_numero3 = document.getElementById("icon");
-    imprime_numero3.innerText = "carrito" + " " + productoss.length;
 
     let imprime_resultado = document.getElementById("carrito_menu");
     imprime_resultado.innerText = productoss.reduce(reducer);
@@ -230,6 +229,7 @@ function clickComprar (e) {
         document.getElementById("section1").style.display = 'flex';
         document.getElementById("medio_cards").style.display = 'flex';
     }
+
 
 /* VER TOTAL */ 
     // let ver_total = document.getElementById("ver_total");
