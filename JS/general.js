@@ -105,14 +105,9 @@ for (let i = 0; i < objCafeteria.length; i++) {
     section.appendChild(div);
     section.appendChild(p);
    
+   
+
 }
-
-
-  
-      // ABRIR CARD
-
-
- // click.style.height = '770';
 
 
 
@@ -140,10 +135,14 @@ function clickComprar (e) {
         return (item.id == nombreProducto);
     }
 
+
     const producto = objCafeteria.find(finderId);
     productoss.push(nombreProducto);
     carrito.push(producto);
     localStorage.setItem("carrito",JSON.stringify(carrito));
+
+
+     
  //ACÁ TERMINA EL PRODUCTO
  
     
@@ -165,7 +164,6 @@ function clickComprar (e) {
     localStorage.setItem("total",JSON.stringify(totalStore));
   
 
-    // let imprime_resultado = document.getElementById("carrito_menu");
     let imprime_numero = document.getElementById("carrito");
     imprime_numero.innerText = "carrito" + " " + productoss.length;
 
@@ -193,6 +191,9 @@ function clickComprar (e) {
         timer: 1500
     })    
 }
+
+
+
 
 
     // CARRITO CLICK 
@@ -245,27 +246,14 @@ function clickComprar (e) {
     //        imprime_resultado.innerText = total.reduce(reducer);
     //    }
 
-
-
-    function cargarCarritoDeLocalStorage () {
-        // ¿Existe un carrito previo guardado en LocalStorage?
-        if (carrito.getItem('carrito') !== null) {
-            // Carga la información
-            carrito = JSON.parse(carrito.getItem('carrito'));
+    document.addEventListener("keyup", e=>{
+        if (e.target.matches("#search")){
+            document.querySelectorAll(".preguntas").forEach(busca=>{
+                busca.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ?busca.classList.remove("filtro")
+                :busca.classList.add("filtro") 
+            })
         }
-    }
-    cargarCarritoDeLocalStorage();
+    })
 
-
-
-// /* SALIR */
-
-// let sali = document.getElementById("salir");
-// sali.addEventListener("click", salir);
-
-
-// function salir() {
-//     document.getElementById("carrito_menu").style.display = 'none';
-//     document.getElementById("botones").style.display = 'none';
-// }
 

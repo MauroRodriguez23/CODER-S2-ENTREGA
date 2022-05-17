@@ -19,7 +19,7 @@
     -webkit-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
     -moz-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
 
-    border-bottom-left-radius: 5%;
+    border-radius:  5%;
     width: 1000px;
     height: 1000px;
     position: relative;
@@ -39,19 +39,6 @@
    overflow-y: scroll;
   display: none;
 }
-
-#carrito_menu::-webkit-scrollbar{
-    width: 20px;
-    border-radius: 300px;
-   
-    background-color: rgba(194, 193, 192, 0.733);
-  }
-
-  #carrito_menu::-webkit-scrollbar-thumb {
-    background-color: rgba(153,95,95,0.75);
-  
-  }
-
 
 
 #botones {
@@ -110,6 +97,7 @@
     background: rgba(168,119,45,1);
 } */
 
+
 #carrito_cafeteria{
     text-decoration: none;
     font-size: 23px;
@@ -120,7 +108,9 @@
     color: white;
     position: absolute;
     top: 50px;
+    left: 50px;
     transition: 300ms all;
+   
 }
 
 
