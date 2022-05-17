@@ -202,8 +202,8 @@ h1 {
 }
 
 
-        /* BOTON BAJAR */
-#bajar {
+        /* BOTONES SUBIR Y BAJAR */
+#bajar, #bajar2, #subir {
     position: relative;
     top: 500px;
     width: 150px;
@@ -225,7 +225,7 @@ h1 {
     
 }
 
-#bajar:hover {
+#subir:hover, #bajar:hover, #bajar2:hover {
     box-shadow: inset 26px 35px 23px 17px rgba(153,95,95,0.75);
     -webkit-box-shadow: inset 16px 35px 23px 17px rgba(153,95,95,0.75);
     -moz-box-shadow: inset 26px 35px 33px 17px rgba(153,95,95,0.75);
@@ -237,7 +237,12 @@ h1 {
 }
 
 
-#icon_bajar {
+#bajar2 {
+    position: absolute;
+    left: 90%;
+    top: 1200px;
+}
+#icon_bajar, #icon_subir {
     position: absolute;
     top: -80px;
     right: 51px;
@@ -247,15 +252,20 @@ h1 {
   
 }
 
+#subir{
+    position: absolute;
+    top: 130px;
+    left: 91%;
+}
 
 
 #medio_cards {
     width: 1200px;
-    height: 120px;
+    height: 90px;
     
     position: absolute;
     left: 650px;
-    top: 30px;
+    top: -5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +291,7 @@ h1 {
     background-size: cover;
     position: relative;
     top: -550px;
-    height: 1350px;
+    height: 1400px;
     
 }
 
@@ -291,25 +301,21 @@ h3 {
     display: flex;
     justify-content: center;
     position: relative;
-    top: -50px;
+    top: 0px;
     color: white;
 }
 
 #nuestra_carta {
     width: 1800px;
-    height: 1400px;
- 
+    height: 1300px;
+  
     margin: auto;
     display: flex;
-
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-
-
+    flex-wrap: wrap;
+    
     border-top: solid 1px #ccc;
-
-
+   
     overflow: hidden;
    
 }
@@ -320,7 +326,7 @@ h3 {
 
 .card {
    
-    margin-top: 50px;
+
     width: 500px;
     height: 30px;
     
@@ -343,7 +349,7 @@ h3 {
 
 .card:hover{
     cursor: pointer;
-    height: 770px;
+    height: 675px;
     box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
     -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
     -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
@@ -397,7 +403,7 @@ h3 {
 
 .img_card img {
     width: 500px;
-    height: 500px;
+    height: 400px;
     
     position: relative;
    
@@ -430,6 +436,8 @@ h3 {
             letter-spacing: 1px;
             width: 30%;
             height:460px;
+            display: flex;
+            justify-content: center;
             text-align: center;
             background-image: linear-gradient(rgba(4,5,10, 0.75), rgba(4,5,10,0.75)),
             url(/IMG/fondo.jpg);
@@ -441,9 +449,24 @@ h3 {
                 -ms-filter: blur(0px); 
                 
                 transition: all 300ms;
-        
+           
+            overflow-x: hidden;
+           
             padding: 15px;
         }
+
+        
+.preguntas::-webkit-scrollbar{
+    width: 1px;
+    border-radius: 300px;
+   
+    background-color: transparent;
+  }
+
+ .preguntas::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  
+  }
         
         .preguntas h3 {
             color: bisque;
@@ -515,7 +538,7 @@ h3 {
         
     /*EFECTO DE BOTONES DE COMPRAR*/
 
-
+    
 
 
 

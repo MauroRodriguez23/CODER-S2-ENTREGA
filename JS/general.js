@@ -20,7 +20,7 @@ const objCafeteria = [
     id: "Café c/s leche doble $120 \n",
     idPrecio: 120,
     p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
-
+    
     {producto: "Matecocido o té", 
     precio: 100,
     img: "/IMG/te.jpg",
@@ -28,12 +28,36 @@ const objCafeteria = [
     idPrecio: 100,
     p: "El té proviene principalmente de <br> China continental, <br> India, Sri Lanka, Taiwán, <br> Japón, Nepal, Australia, <br> Argentina y Kenia."},
 
+
     {producto:  "Capuccino", 
     precio: 140,
     img: "/IMG/capuccino.jpeg",
     id : "Capuccino $140 \n",
     idPrecio: 140,
     p: "El capuchino (del italiano cappuccino) <br> es una bebida nacida en Italia, <br> preparada con café expreso y <br> leche montada con vapor <br> para darle cremosidad."},
+
+    {producto: "Exprimido de naranja",
+    precio: 140,
+    img: "/IMG/cafe.jpg",
+    id: "Exprimido de naranja \n",
+    idPrecio: 140,
+    p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
+
+    {producto: "Exprimido de naranja",
+    precio: 140,
+    img: "/IMG/cafe.jpg",
+    id: "Exprimido de naranja \n",
+    idPrecio: 140,
+    p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
+
+    {producto: "Exprimido de naranja",
+    precio: 140,
+    img: "/IMG/cafe.jpg",
+    id: "Exprimido de naranja \n",
+    idPrecio: 140,
+    p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
+
+
 
     {producto: "Medialunas dulces/saladas", 
     precio: 80,

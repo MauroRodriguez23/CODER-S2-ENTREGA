@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+   
   
 }
 
@@ -18,7 +19,7 @@
     -webkit-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
     -moz-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
 
-    border-radius: 5%;
+    border-bottom-left-radius: 5%;
     width: 1000px;
     height: 1000px;
     position: relative;
@@ -32,10 +33,24 @@
    
    align-items: center;
    flex-direction: column;
+   
 
+   overflow: hidden;
    overflow-y: scroll;
   display: none;
 }
+
+#carrito_menu::-webkit-scrollbar{
+    width: 20px;
+    border-radius: 300px;
+   
+    background-color: rgba(194, 193, 192, 0.733);
+  }
+
+  #carrito_menu::-webkit-scrollbar-thumb {
+    background-color: rgba(153,95,95,0.75);
+  
+  }
 
 
 
