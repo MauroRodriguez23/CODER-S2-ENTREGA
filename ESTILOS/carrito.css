@@ -110,6 +110,19 @@
     background: rgba(168,119,45,1);
 } */
 
+#carrito_cafeteria{
+    text-decoration: none;
+    font-size: 23px;
+    font-family: family_header;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50px;
+    transition: 300ms all;
+}
+
 
 
 #carrito:hover {
