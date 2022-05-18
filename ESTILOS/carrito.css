@@ -21,8 +21,8 @@
     border-radius:  5%;
     width: 1000px;
     height: 1000px;
-    position: relative;
-    margin: 0px auto;
+    position: absolute;
+    left: 800px;
     top: 100px;
 
 
@@ -33,22 +33,24 @@
    align-items: center;
    flex-direction: column;
    
-
+  
    overflow: hidden;
    overflow-y: scroll;
-  display: none;
+   visibility: hidden;
+ 
 }
 
 
 #botones {
 
-    position: relative;
-    top: 180px;
+    position: absolute;
+    bottom: 700px;
+    left: 1100px;
     display: flex;
     justify-content: center;
     
-    z-index: 3000;
-    display: none;
+   
+    visibility: hidden; 
 }
 
 #ver_total, #salir {
@@ -67,7 +69,7 @@
     box-shadow: inset 1px 1px 23px 7px rgba(153,95,95,0.75);
     -webkit-box-shadow: inset 1px 10px 23px 7px rgba(153,95,95,0.75);
     -moz-box-shadow: inset 1px 1px 23px 7px rgba(153,95,95,0.75);
-    
+  
 }
 
 

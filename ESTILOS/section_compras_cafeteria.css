@@ -19,6 +19,7 @@
             background-size: cover;
             position: relative;
             height: 1900px;
+          
         }
         
         h3 {
@@ -37,9 +38,9 @@
             display: flex;
             justify-content: space-around;
             position: relative;
-            top: 150px;
+            top: 190px;
             flex-wrap: wrap;
-         
+            visibility: visible;
             transition: all 300ms;
         }
         

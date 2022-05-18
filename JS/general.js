@@ -194,13 +194,11 @@ let comprar = document.getElementsByClassName("btn_comprar");
     carrito2.addEventListener("click", clickCarrito);
 
     function clickCarrito() {
-        document.getElementById("nuestra_carta").style.display = 'none';
-        document.getElementById("medio_cards").style.display = 'none';
-       
-        document.getElementById("carrito_menu").style.display = 'flex';
-        document.getElementById("botones").style.display = 'flex';
+        document.getElementById("nuestra_carta").style.visibility = 'hidden';
+        document.getElementById("buscador").style.visibility = 'hidden';
 
-
+        document.getElementById("carrito_menu").style.visibility = 'visible';
+        document.getElementById("botones").style.visibility = 'visible';
     }
 
 
@@ -210,12 +208,13 @@ let comprar = document.getElementsByClassName("btn_comprar");
     salir.addEventListener("click", clickSalir);
 
     function clickSalir(){
-        document.getElementById("carrito_menu").style.display = 'none';
-        document.getElementById("botones").style.display = 'none';
+        document.getElementById("carrito_menu").style.visibility = 'hidden';
+        document.getElementById("botones").style.visibility = 'hidden';
 
-        document.getElementById("nuestra_carta").style.display = 'flex';
-        document.getElementById("section1").style.display = 'flex';
-        document.getElementById("medio_cards").style.display = 'flex';
+        document.getElementById("nuestra_carta").style.visibility = 'visible';
+        document.getElementById("section1").style.visibility = 'visible';
+        document.getElementById("buscador").style.visibility = 'visible';
+      
     }
 
 
