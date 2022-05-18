@@ -8,9 +8,14 @@
     <script src="https://kit.fontawesome.com/0cb147038e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/ESTILOS/style.css">
     <link rel="stylesheet" href="/ESTILOS/carrito.css">
+    <link rel="stylesheet" href="/ESTILOS/buscador.css">
     <link rel="stylesheet" href="/ESTILOS/notificacion.css">
+    <link rel="stylesheet" href="/ESTILOS/section_slider.css">
+    <link rel="stylesheet" href="/ESTILOS/section_compras_cafeteria.css">   
+
     <link rel="stylesheet" href="/FAMILY/helvetica_barra.otf">
-    <link rel="stylesheet" href="/DOCUMENTOS/carrito.html">
+   
+    
 </head>
 
 <body>
@@ -37,7 +42,6 @@
                     <!-- BUSCADOR -->
         <section id="buscador">
             <input type="search" id="search" placeholder="BUSCAR PRODUCTO"><i id="icon_search" class="fa fa-search" aria-hidden="true"></i>
-
         </section>
 
                     <!-- BAJAR  -->
@@ -50,6 +54,9 @@
        <!-- CAFETERIA -->
      
        <article id="cafeteria">
+        <a href="#header"><button id="subir"><i class="fa fa-hand-o-up" aria-hidden="true" id="icon_subir"></i>Subir</button></a> 
+        <a href="#section1"><button id="bajar2"><i class="fa fa-hand-o-down" aria-hidden="true" id="icon_bajar"></i>bajar</button></a> 
+
         <a href="#cafeteria" id="carrito_cafeteria"><i id="icon" class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a>
         <div id="carrito_menu"></div>
          <div id="botones">
@@ -57,24 +64,26 @@
          <a href="#header"><button id="salir">Salir</button></a>
          </div>   
 
-        <!--<a href="/DOCUMENTOS/carrito.html" target="_blank" id="carrito_menu"></a>-->
 
         <div id="medio_cards">
             <span class="span_medio">Elegí lo que quieras tomar</span>
         </div>
+
+                <!-- NUESTRA CARTA -->
         <section id="nuestra_carta">
-            <a href="#header"><button id="subir"><i class="fa fa-hand-o-up" aria-hidden="true" id="icon_subir"></i>Subir</button></a> 
-            <a href="#section1"><button id="bajar2"><i class="fa fa-hand-o-down" aria-hidden="true" id="icon_bajar"></i>bajar</button></a> 
+          
         </section>     
       
-                <!-- SOBRE NOSOTROS -->
-                <img name = "slider" width="100%" height="1300px" class="slider">
-<section id="section1">
-    
-    <h4>Preguntas frecuentes</h4>
+                
+        <!-- INICIO SECTION SLIDER -->
+        <h4 class="titulo_preguntas">Preguntas frecuentes</h4>
+    <section id="section1">
+        
+        <img name = "slider" width="100%" height="1300px" class="slider">
+       
     <div id="caja_preguntas">
 
-
+      
 <article id="quienes_somos" class="preguntas">
             <h3>¿Quiénes somos?</h3>
             <p>Somos una empresa especializada de café en pleno expansión. <br>
@@ -105,16 +114,16 @@
 </article>
 
 
-<a href="#nuestra_carta"><button id="subir_abajo"><i class="fa fa-hand-o-up" aria-hidden="true" id="icon_subir"></i>Subir</button></a>
+<a href="#cafeteria"><button id="subir_abajo"><i class="fa fa-hand-o-up" aria-hidden="true" id="icon_subir"></i>Subir</button></a>
 </div>
   <footer><span id="footer_name"> © Derechos de autor <strong>Mauro Rodriguez</strong></span></footer>     
 </section>   
-<!-- SLIDER -->
+<!-- FIN SECTION SLIDER -->
  
 
      
              <!-- PROMOS -->
-
+      
         <section id="promos">
             <button id="prom1">Café con leche + 2 medialunas $220</button> 
             <button id="prom2">Café con leche + tostadas de campo $300</button>
@@ -130,14 +139,13 @@
     </div>
    -->
       
-    
-
-
 
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
-    <script src="/JS/carrito.js"></script>
+   
     <script src="/JS/slider.js"></script>
+    <script src="/JS/filtro.js"></script>
     <script src="/JS/general.js"></script>
+  
 </body>
 </html>

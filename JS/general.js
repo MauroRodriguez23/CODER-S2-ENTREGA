@@ -4,8 +4,6 @@ if(!JSON.parse(localStorage.getItem("carrito"))) {
 const carritoInicial = JSON.parse(localStorage.getItem("carrito"));
 const carrito = carritoInicial;
 
-window.onload
-
 
 if(!JSON.parse(localStorage.getItem("total"))) {
     localStorage.setItem("total",JSON.stringify([]))
@@ -17,10 +15,10 @@ const totalStore = totalIni;
 
     // ARRAY CAFETERIA
 const objCafeteria = [
-    {producto: "Café c/s leche doble",
+    {producto: "Cafe c/s leche doble",
     precio: 120,
     img: "/IMG/cafe.jpg",
-    id: "Café c/s leche doble $120 \n",
+    id: "Cafe c/s leche doble $120 \n",
     idPrecio: 120,
     p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
     
@@ -42,21 +40,21 @@ const objCafeteria = [
     {producto: "Lagrima",
     precio: 150,
     img: "/IMG/lagrima.jpg",
-    id: "Lagrima \n",
+    id: "Lagrima $150 \n",
     idPrecio: 150,
     p: "Si el café te gusta en sus versiones más suaves y cremosas, <br> una lágrima es la bebida caliente ideal para tí. <br> Es una bebida inspirada en el macciato pero con las proporciones al revés. <br> Alrededor de un 10% de café."},
 
     {producto: "Licuado de banana",
     precio: 160,
     img: "/IMG/banana.jpg",
-    id: "Licuado de banana \n",
+    id: "Licuado de banana $160\n",
     idPrecio: 160,
     p: "El café con leche es una bebida de café común en España y América Latina <br> que consiste en café fuerte (generalmente espresso) mezclado con leche escaldada en cantidades aproximadamente iguales."},
 
     {producto: "Exprimido de naranja",
     precio: 140,
     img: "/IMG/naranja.jpg",
-    id: "Exprimido de naranja \n",
+    id: "Exprimido de naranja $140\n",
     idPrecio: 140,
     p: "El zumo de naranja exprimido puede ser incluido en una dieta con “comida real”, saludable y equilibrada. <br> Concretamente, se recomienda tomar 1 vaso al día de 250 ml."},
 
@@ -88,32 +86,33 @@ const objCafeteria = [
 
 for (let i = 0; i < objCafeteria.length; i++) {
     const element = objCafeteria[i];
-    const div = document.createElement("div");
     
-    div.classList.add("card");
+    const div = document.createElement("div");
+   
+    div.classList.add("card","filtro_card");
+   
     div.setAttribute("id", element.id)
+
     const p = document.createElement("p");
     p.classList.add("parrafo");
+
+
     div.innerHTML = `<span class="span_card" >${element.producto + " $" + element.precio}</span>
                      <div class="img_card">
                         <img src=${element.img} alt="fotoProducto" />
                      </div>
-                    
                      <p class="parrafo_caracteristicas">${element.p}</p>
-
- 
-                    
-                     <button id="comprar2" class="btn_comprar">comprar</button>`;
+                     <button class="btn_comprar">comprar</button>
+                     `;  
+    
     const section = document.getElementById("nuestra_carta"); 
     section.appendChild(div);
     section.appendChild(p);
-   
-
 }
 
 
 /* BOTON COMPRAR */
-let contador = 0;
+
 const productoss = [];
 const total = [];
 const reducer = (accumulator, curr) => accumulator + curr;
@@ -121,14 +120,12 @@ const reducer = (accumulator, curr) => accumulator + curr;
 let comprar = document.getElementsByClassName("btn_comprar");
 
 
-for (let i = 0; i < comprar.length; i++) {
+    for (let i = 0; i < comprar.length; i++) {
     const element = comprar[i];
     element.addEventListener("click", clickComprar);
-}
+    }
 
-
-
-function clickComprar (e) {
+    function clickComprar (e) {
     const evento = e.target
     const nombreProducto = evento.parentNode.getAttribute('id');
    
@@ -137,7 +134,6 @@ function clickComprar (e) {
         return (item.id == nombreProducto);
     }
 
-    
 
     const producto = objCafeteria.find(finderId);
     productoss.push(nombreProducto);
@@ -171,13 +167,9 @@ function clickComprar (e) {
     let imprime_numero2 = document.getElementById("carrito_cafeteria");
     imprime_numero2.innerText = "carrito" + " " + productoss.length;
 
-
     let imprime_resultado = document.getElementById("carrito_menu");
     imprime_resultado.innerText = productoss.reduce(reducer);
    
-
-
-
      /*LIBRERIA PARA PONER ALERTS*/
     Swal.fire({
         icon: 'success',
@@ -191,11 +183,10 @@ function clickComprar (e) {
     })    
 }
 
+    // CLICK CARD
 
 
-
-
-    // CARRITO CLICK 
+    // CLICK CARRITO
 
     let carrito2 = document.getElementById("carrito");
     let carrito22 = document.getElementById("carrito_cafeteria");
@@ -204,11 +195,8 @@ function clickComprar (e) {
 
     function clickCarrito() {
         document.getElementById("nuestra_carta").style.display = 'none';
-        document.getElementById("section1").style.display = 'none';
         document.getElementById("medio_cards").style.display = 'none';
        
-     
-        
         document.getElementById("carrito_menu").style.display = 'flex';
         document.getElementById("botones").style.display = 'flex';
 
@@ -246,14 +234,5 @@ function clickComprar (e) {
     //        imprime_resultado.innerText = total.reduce(reducer);
     //    }
 
-    document.addEventListener("keyup", e=>{
-        if (e.target.matches("#search")){
-            document.querySelectorAll(".preguntas").forEach(busca=>{
-                busca.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-                ?busca.classList.remove("filtro")
-                :busca.classList.add("filtro") 
-            })
-        }
-    })
-
+    // 
 

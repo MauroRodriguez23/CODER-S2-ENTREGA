@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+    /* INICIO COMPRAS CAFETERIA */
+
+    #cafeteria {
+        background-image: linear-gradient(rgba(4,5,10, 0.65), rgba(4,5,10,0.65)),
+        url(/IMG/fondo2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 1900px;
+    }
+    
+    h3 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0px;
+        font-size: 55px;
+        color: white;
+    }
+    
+    #nuestra_carta {
+        width: 1800px;
+        height: 1700px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 150px;
+        flex-wrap: wrap;
+   
+        transition: all 300ms;
+    }
+    
+    
+     /* INICIO DE CARDS */
+    
+    
+    .card {
+        width: 500px;
+        height: 400px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5%;
+        
+ 
+        overflow: hidden;
+        position: relative;
+        top: -1px;
+        transition: 500ms all;
+        transform: scale(0.9)
+    }
+    
+     .card:hover{
+        cursor: pointer;
+        height: 705px;
+        box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
+        -webkit-box-shadow: 1px 10px 23px 7px rgba(247, 243, 243, 0.75);
+        -moz-box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
+        transform: translate(-10%, -1%);
+      
+      
+    } 
+    
+    .span_card {
+        color: wheat;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        width: 500px;
+        box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+    }
+ 
+    
+      /*CARACTERISTICAS DE LAS CARDS*/
+    
+      .parrafo_caracteristicas {
+        font-size: 25px;
+        color: white;
+        margin: 10px;
+      
+        border-radius: 2%;
+        text-align: center;
+    }
+    
+    .btn_comprar {
+        width: 200px;
+        border-radius: 5%;
+        font-size: 17px;
+        letter-spacing: 2px;
+        border: solid 5px rgba(153,95,95,0.75);
+        box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        background-color: transparent;
+        color: wheat;
+        text-transform: uppercase;
+        padding: 15px;
+       
+    }
+    
+    .btn_comprar:focus{
+        color: green;
+    }
+    
+    
+    .img_card img {
+        width: 500px;
+        height: 400px;
+    }
+    

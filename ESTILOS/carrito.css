@@ -3,7 +3,6 @@
     margin: 0px;
     box-sizing: border-box;
    
-  
 }
 
 #carrito_menu {
@@ -47,8 +46,9 @@
     top: 180px;
     display: flex;
     justify-content: center;
+    
+    z-index: 3000;
     display: none;
-   
 }
 
 #ver_total, #salir {

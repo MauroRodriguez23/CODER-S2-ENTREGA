@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.busca_cafeteria {
+    font-size: 35px;
+    color: red;
+}
+
+   
+.filtro{
+    display: none;
+}
