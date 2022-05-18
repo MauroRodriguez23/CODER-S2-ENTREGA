@@ -108,7 +108,7 @@ h1 {
         /* FINAL DEL HEADER */
         
         /* BUSCADOR */
-#buscador {
+#buscador{
     border: solid 4px rgb(247, 244, 244);
     border-radius: 250px;
     border: none;
@@ -117,7 +117,10 @@ h1 {
     height: 100px;
 
     margin: 0% auto;
-    margin-top: 500px;
+    
+    position: relative;
+    top: 50px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +166,7 @@ h1 {
     font-weight: bold;
 }
 
-#search:hover {
+#search:hover{
     cursor: pointer;
     opacity: 1;
     width: 95%;
