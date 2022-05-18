@@ -11,6 +11,9 @@
     src: url(/FAMILY/helvetica_barra.otf);
 }
 
+.filter {
+    display: none;
+}
 
 body {
     background-color: rgb(24, 37, 44);

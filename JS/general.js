@@ -235,4 +235,3 @@ let comprar = document.getElementsByClassName("btn_comprar");
     //    }
 
     // 
-
