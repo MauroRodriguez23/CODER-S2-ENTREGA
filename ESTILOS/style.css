@@ -1,9 +1,8 @@
-* {
+* { 
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-   
 }
 
 @font-face {
@@ -22,7 +21,6 @@ body {
 }
 
 h1 {
-
     position: absolute;
     top: 30px;
     margin-left: 50px;
@@ -56,7 +54,6 @@ h1 {
 }
 
    
-
 #main {
     height: 100px;
     display: flex;
@@ -64,9 +61,7 @@ h1 {
     justify-content: center;
     position: relative;
     top: 50px;
-    
 }
-
 
 #main li {
     display: flex;
@@ -78,7 +73,6 @@ h1 {
     cursor: pointer;
 }
 
-
 #main li a {
     text-decoration: none;
     font-size: 23px;
@@ -87,7 +81,6 @@ h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: white;
-   
     transition: 300ms all;
 }
 
@@ -168,41 +161,9 @@ h1 {
     position: absolute;
     top: 750px;
     right: 50%;
-    
-
 }
-
-
-#medio_cards {
-    width: 1200px;
-    height: 90px;
-    
-    position: absolute;
-    left: 650px;
-    top: -5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  
-   border-bottom: solid 3px #ccc;
- 
-}
-
-.span_medio {
-    color: white;
-    font-size: 28px;
-    text-transform: uppercase;
-}
-
 
         
-        #promos {
-            display: none;
-        }
-        
-
-
 #footer_name {
     color: #ccc;
     width: 120px;
@@ -211,9 +172,11 @@ h1 {
 }
 
 footer {
-  
     position: absolute;
     left: 85%;
     margin-top: 1200px;
 }
 
+#promos {
+    display: none;
+}

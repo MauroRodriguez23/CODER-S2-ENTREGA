@@ -10,7 +10,7 @@ const carrito = carritoInicial;
 let allContainerCart = document.querySelector('.products');
 let containerBuyCart = document.querySelector('.card-items');
 let precioTotal = document.querySelector('.price-total')
-let amountProduct = document.querySelector('.count-product');
+let contadorProduct = document.querySelector('.count-product');
 
 
 let comprarCosas = [];
@@ -29,21 +29,26 @@ function addProduct(e){
     e.preventDefault();
     if (e.target.classList.contains('btn-add-cart')) {
         const selectProduct = e.target.parentElement; 
-        readTheContent(selectProduct);
+        leerTheContent(selectProduct);
 
 
-           /*LIBRERIA PARA PONER ALERTS*/
-    Swal.fire({
-        icon: 'success',
-        imageWidth: 400,
-        imageHeight: 360,
-        background: 'transparent',
-        title: '¡Nuevo producto al carrito!',
-        showConfirmButton: false,
-        color: 'green',
-        timer: 1500
-    })    
-    }
+           /*LIBRERIA PARA PONER ALERTS*/ 
+Swal.fire({
+    title: '¡Nuevo producto al carrito!',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  },
+    showConfirmButton: false,
+    background: 'transparent',
+    icon: 'success',
+    color: 'white',
+    position: 'top-start',
+    timer: 1300,
+  })
+}   
 }
 
 function deleteProduct(e) {
@@ -64,7 +69,7 @@ function deleteProduct(e) {
     loadHtml();
 }
 
-function readTheContent(product){
+function leerTheContent(product){
     const infoProduct = {
         image: product.querySelector('div img').src,
         title: product.querySelector('.title').textContent,
@@ -83,7 +88,7 @@ function readTheContent(product){
                 product.cantidad++;
                 return product;
             } else {
-                return product
+                return product;
             }
         });
         comprarCosas = [...pro];
@@ -114,7 +119,7 @@ function loadHtml(){
 
         precioTotal.innerHTML = totalCard;
 
-        amountProduct.innerHTML = contProduct;
+        contadorProduct.innerHTML = contProduct;
     });
 }
  function clearHtml(){

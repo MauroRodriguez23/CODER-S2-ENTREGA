@@ -55,6 +55,7 @@
         background-size: cover;
     }
 
+  
            /*EFECTO DE BOTONES DE COMPRAR*/
            .card a {
             text-decoration: none;
@@ -75,10 +76,10 @@
             top: 50px;
         }
         
-        .btn_comprar:focus{
+        .btn-add-cart:focus{
             color: green;
         }
-
+        
      
     .card {
          width: 500px;
@@ -87,11 +88,10 @@
         -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
         -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
      
-        overflow: hidden;
-        
         transition: 500ms all;
          transform: scale(0.9);
          border-radius: 5%;
+         overflow: hidden;
     }
 
 
@@ -102,12 +102,11 @@
         -webkit-box-shadow: 1px 10px 23px 7px rgba(247, 243, 243, 0.75);
         -moz-box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
          transform: translate(-10%, -1%); 
-         
     } 
 
     
     .card p {
-        color: wheat;
+        color: white;
         display: flex;
         justify-content: center;
         font-size: 30px;
