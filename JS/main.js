@@ -52,7 +52,7 @@ function deleteProduct(e) {
 
         comprarCosas.forEach(value => {
             if (value.id == deleteId) {
-                let priceReduce = parseFloat(value.price) * parseFloat(value.amount);
+                let priceReduce = parseFloat(value.price) * parseFloat(value.cantidad);
                 totalCard =  totalCard - priceReduce;
                 totalCard = totalCard.toFixed(2);
             }
