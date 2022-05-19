@@ -5,101 +5,6 @@
    
 }
 
-#carrito_menu {
-  
-    background-image: linear-gradient( rgba(0, 0, 0, 0.815)100%, rgba(0, 0, 0, .4) 100%),  
-    url(/IMG/fondo2.jpg);
-    background-position: -0px 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    
-    box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
-    -webkit-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
-    -moz-box-shadow: 16px 10px 23px 7px rgba(153,95,95,0.75);
-
-    border-radius:  5%;
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    left: 800px;
-    top: 100px;
-
-
-   color: white;
-   font-size: 35px;
-   display: flex;
-   
-   align-items: center;
-   flex-direction: column;
-   
-  
-   overflow: hidden;
-   overflow-y: scroll;
-   visibility: hidden;
- 
-}
-
-
-#botones {
-
-    position: absolute;
-    bottom: 700px;
-    left: 1100px;
-    display: flex;
-    justify-content: center;
-    
-   
-    visibility: hidden; 
-}
-
-#ver_total, #salir {
-    padding: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 25px;
-    color: white;
-    width: 150px;
-
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
-
-
-    box-shadow: inset 1px 1px 23px 7px rgba(153,95,95,0.75);
-    -webkit-box-shadow: inset 1px 10px 23px 7px rgba(153,95,95,0.75);
-    -moz-box-shadow: inset 1px 1px 23px 7px rgba(153,95,95,0.75);
-  
-}
-
-
-
-#carrito2 {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-    url(/IMG/fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 1292px;
-}
-
-/* #carrito {
-  
-   
-    margin-right: 20px;
-    margin-left: 50px;
-    padding: 29px;
-    
-  
-    justify-content: center;
-    align-items: center;
-    color: wheat;
-   
-    font-size: 22px;
-    background: rgba(168,119,45,1);
-} */
-
-
 #carrito_cafeteria{
     text-decoration: none;
     font-size: 23px;
@@ -112,13 +17,6 @@
     top: 50px;
     left: 50px;
     transition: 300ms all;
-   
+ 
 }
-
-
-
-#carrito:hover {
-    cursor: pointer;
-}
-
 

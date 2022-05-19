@@ -3,7 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+   
 }
 
 @font-face {
@@ -15,9 +15,10 @@
     display: none;
 }
 
+
 body {
     background-color: rgb(24, 37, 44);
-
+    overflow-x: hidden;
 }
 
 h1 {
@@ -200,9 +201,7 @@ h1 {
             display: none;
         }
         
-    /*EFECTO DE BOTONES DE COMPRAR*/
 
-    
 
 #footer_name {
     color: #ccc;
@@ -218,8 +217,3 @@ footer {
     margin-top: 1200px;
 }
 
-#incrementa {
-    position: relative;
-    top: 200px;
-}
-  
