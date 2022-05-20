@@ -1,0 +1,43 @@
+.interruptor {
+    background: #343D5B;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+}
+
+.interruptor span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: white;
+}
+
+.interruptor::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-sizing: 0px 0px 2px 2px rgba(0,0,0.2);
+}
+
+.interruptor.active {
+    background: orange;
+    color: black;
+}
+
+.interruptor.active::after{
+    right: 0;
+    left: unset;
+}

@@ -16,9 +16,9 @@
 
 
 body {
-    background-color: rgb(24, 37, 44);
     overflow-x: hidden;
 }
+
 
 h1 {
     position: absolute;
@@ -52,6 +52,7 @@ h1 {
     width: 100%;
     height: 1300px;
 }
+
 
    
 #main {
@@ -124,6 +125,11 @@ h1 {
     
 }
 
+#bajar {
+    position: relative;
+    top: 1100px;
+}
+
 #subir:hover, #bajar:hover, #bajar2:hover,#subir_abajo:hover {
     box-shadow: inset 26px 35px 23px 17px rgba(153,95,95,0.75);
     -webkit-box-shadow: inset 16px 35px 23px 17px rgba(153,95,95,0.75);
@@ -141,7 +147,7 @@ h1 {
     left: 90%;
     top: 80%;
 }
-#icon_bajar, #icon_subir {
+#icon_bajar, #icon_subir, #icon_subir2 {
     position: absolute;
     top: -80px;
     right: 51px;
@@ -157,9 +163,14 @@ h1 {
     left: 91%;
 }
 
+#icon_subir2 {
+    position: absolute;
+    top: -60px;
+}
+
 #subir_abajo {
     position: absolute;
-    top: 750px;
+    top: 820px;
     right: 50%;
 }
 
@@ -169,6 +180,7 @@ h1 {
     width: 120px;
     height: 30px;
     font-size: 22px;
+ 
 }
 
 footer {

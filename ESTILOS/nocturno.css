@@ -1,0 +1,40 @@
+.dark #header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.808)),
+    url(/IMG/Fondo_inicio.jpeg);
+}
+
+
+.dark #cafeteria {
+    background-image: linear-gradient(rgba(4, 5, 10, 0.918), rgba(4, 5, 10, 0.918)),
+        url(/IMG/fondo2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.dark #section1 {
+    background-color: rgb(36, 34, 34);
+    box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
+    -webkit-box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
+    -moz-box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
+
+}
+
+
+.dark .titulo_preguntas{
+    border-bottom: solid rgba(95, 153, 100, 0.75);
+    color: white;
+} 
+
+.dark .preguntas:hover {
+    -webkit-transform: rotateY(0deg) rotateZ(1deg) translateX(1px) translateY(1px) scale(1.1) skewX(10deg);
+-moz-transform: rotateY(0deg) rotateZ(3deg) translateX(2px) translateY(1px) scale(1.2) skewX(5deg);
+-ms-transform: rotateY(0deg) rotateZ(3deg) translateX(2px) translateY(1px) scale(1.2) skewX(5deg);
+-o-transform: rotateY(0deg) rotateZ(3deg) translateX(2px) translateY(1px) scale(1.2) skewX(5deg);
+transform:  rotateY(0deg) rotateZ(3deg) translateX(2px) translateY(1px) scale(1.2) skewX(5deg);
+
+box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
+-webkit-box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
+-moz-box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
+
+}
+ 

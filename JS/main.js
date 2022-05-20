@@ -1,9 +1,9 @@
-if(!JSON.parse(localStorage.getItem("carrito"))) {
-    localStorage.setItem("carrito",JSON.stringify([]))
-}
+// if(!JSON.parse(localStorage.getItem("productos"))) {
+//     localStorage.setItem("productos",JSON.stringify([]))
+// }
 
-const carritoInicial = JSON.parse(localStorage.getItem("carrito"));
-const carrito = carritoInicial;
+// const carritoInicial = JSON.parse(localStorage.getItem("productos"));
+// const carrito_storage = carritoInicial;
 
 
 //variables
@@ -17,11 +17,13 @@ let comprarCosas = [];
 let totalCard = 0;
 let contProduct = 0;
 
+
+
 //functiones
 loadEventListenrs();
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
-
+  
     containerBuyCart.addEventListener('click', deleteProduct);
 }
 
@@ -30,7 +32,6 @@ function addProduct(e){
     if (e.target.classList.contains('btn-add-cart')) {
         const selectProduct = e.target.parentElement; 
         leerTheContent(selectProduct);
-
 
            /*LIBRERIA PARA PONER ALERTS*/ 
 Swal.fire({
@@ -48,8 +49,11 @@ Swal.fire({
     position: 'top-start',
     timer: 1300,
   })
+
 }   
 }
+
+
 
 function deleteProduct(e) {
     if (e.target.classList.contains('delete-product')) {
@@ -67,6 +71,7 @@ function deleteProduct(e) {
         contProduct--;
     }
     loadHtml();
+
 }
 
 function leerTheContent(product){
@@ -77,6 +82,7 @@ function leerTheContent(product){
         id: product.querySelector('a').getAttribute('data-id'),
         cantidad: 1
     }
+
 
     totalCard = parseFloat(totalCard) + parseFloat(infoProduct.price);
     totalCard = totalCard.toFixed(2);
@@ -95,7 +101,9 @@ function leerTheContent(product){
     } else {
         comprarCosas = [...comprarCosas, infoProduct]
         contProduct++;
+
     }
+    
     loadHtml();
 }
 
@@ -120,8 +128,13 @@ function loadHtml(){
         precioTotal.innerHTML = totalCard;
 
         contadorProduct.innerHTML = contProduct;
+        
     });
 }
+
+  
+
+
  function clearHtml(){
     containerBuyCart.innerHTML = '';
  }
@@ -132,3 +145,25 @@ function loadHtml(){
 function closeBtn(){
      document.getElementById("products-id").style.display = "none";
 }
+
+
+    //    // ACAAAAAAAAAAAAAAAAAAA
+    //    guardarProdStorage(selectProduct){
+    //     let productos;
+    //     productos = this.obtenerProdStorage();
+    //     productos.push(selectProduct);
+    //     localStorage.setItem('productos', JSON.stringify(productos));
+    // }
+
+    // obtenerProdStorage(){
+    //     let productStorage;
+    //     if(localStorage.getItem('productos') === null){
+    //         productStorage = [];
+    //     }
+    //     else {
+    //         productStorage = JSON.parse(localStorage.getItem('productos'));
+    //     }
+    //     return productStorage;
+    // }
+
+ 

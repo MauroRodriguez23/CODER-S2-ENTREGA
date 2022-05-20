@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mauro Rodriguez</title>
+
     <script src="https://kit.fontawesome.com/0cb147038e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/ESTILOS/style.css">
     <link rel="stylesheet" href="/ESTILOS/carrito.css">
@@ -12,6 +13,8 @@
     <link rel="stylesheet" href="/ESTILOS/section_slider.css">
     <link rel="stylesheet" href="/ESTILOS/section_compras_cafeteria.css">   
     <link rel="stylesheet" href="/FAMILY/helvetica_barra.otf">
+    <link rel="stylesheet" href="/ESTILOS/interruptor.css">
+    <link rel="stylesheet" href="/ESTILOS/nocturno.css">
 </head>
 
 <body>
@@ -22,7 +25,12 @@
             
             <li id="carta"><i id="icon" class="fa fa-hand-o-right" aria-hidden="true"></i><a href="#cafeteria">Nuestra carta</a></li>
             <li id="promos"><i id="icon" class="fa fa-hand-o-right" aria-hidden="true"></i><a href="#">Nuestras promos</a></li>
-            <li><a href="#cafeteria" id="carrito"><i id="icon" class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a></li>
+            <li><a href="#ancla_car" id="carrito"><i id="icon" class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a></li>
+
+            <button class="interruptor" id="interruptor">
+                <span><i class="fa fa-sun-o" aria-hidden="true"></i></span>
+                <span><i class="fa fa-moon-o" aria-hidden="true"></i></span>
+            </button>
         </ul>
      
                                              <!-- BAJAR  -->
@@ -46,7 +54,7 @@
         
                                               <!-- NUESTRA CARTA CARRITO -->
        
-    <div class="header-section container">
+    <div class="header-section container" id="ancla_car">
         <div>
         <p class="count-product">0</p>
         </div>
@@ -147,62 +155,65 @@
                    
     </section>
         
-                        <!-- INICIO SECTION SLIDER -->
 
-        <h4 class="titulo_preguntas">Preguntas frecuentes</h4>
-            <section id="section1">
-            <img name = "slider" width="100%" height="1300px" class="slider">
+                                     <!-- PROMOS -->
+                                        <section id="promos">
+                                        <button id="prom1">Café con leche + 2 medialunas $220</button> 
+                                        <button id="prom2">Café con leche + tostadas de campo $300</button>
+                                        <button id="prom3">Café con leche + tostado + jugo de naranja $390</button>
+                                        <button id="volver_atras" onclick="volverAtras()">Volver atrás</button>
+                                     </section>
+                                </article>
+
+                        <!-- INICIO SECTION SLIDER -->
+           
+    <section id="section1">
+                <h4 class="titulo_preguntas">Preguntas frecuentes</h4>
+     
        
             <div id="caja_preguntas">
-           
-<article id="quienes_somos" class="preguntas">
-            <h3>¿Quiénes somos?</h3>
-            <p>Somos una empresa especializada de café en pleno expansión. <br>
-            ¡Queremos formar parte de los mejores cafés de Rosario! <br> 
-            De la mano de baristas vas a poder disfrutar de un café texturado y sabroso. <br>
-            Contamos con personal capacitado para que puedan quitarte las dudas <br>
-            sobre nuestras bebidas exquisitas. <br>
-             ¡Cada bebida está echa y servida con amor!
+                <img name = "slider" width="1900px" height="1000px" class="slider">
+            <article id="quienes_somos" class="preguntas">
+                        <h3>¿Quiénes somos?</h3>
+                        <p>Somos una empresa especializada de café en pleno expansión. <br>
+                        ¡Queremos formar parte de los mejores cafés de Rosario! <br> 
+                        De la mano de baristas vas a poder disfrutar de un café texturado y sabroso. <br>
+                        Contamos con personal capacitado para que puedan quitarte las dudas <br>
+                        sobre nuestras bebidas exquisitas. <br>
+                        ¡Cada bebida está echa y servida con amor!
+                        </article>
+                    
+                    
+            <article id="art" class="preguntas">
+                        <h3>¿Qué es el Latte Art?</h3>
+                        <p>El Latte art es un método de preparación de café creado vertiendo microespuma <br>
+                        en un trago de espresso y dando como resultado un patrón o diseño en la superficie del café con leche. <br>
+                        También se puede crear o embellecer simplemente "dibujando" en la capa superior de espuma.
             </article>
-        
-        
-<article id="art" class="preguntas">
-            <h3>¿Qué es el Latte Art?</h3>
-            <p>El Latte art es un método de preparación de café creado vertiendo microespuma <br>
-            en un trago de espresso y dando como resultado un patrón o diseño en la superficie del café con leche. <br>
-             También se puede crear o embellecer simplemente "dibujando" en la capa superior de espuma.
-</article>
 
 
-<article id="se_hace" class="preguntas">
-    <h3>¿Cómo se hacen los dibujos?</h3>
-    <p> Hay dos formas de crear estos diseños, <br>
-        y generalmente se utiliza uno de los métodos, e incluso a veces, una combinación de ambos. <br>
-           El primer método consiste en ir manipulando el flujo de leche desde una jarra <br>
-        (conocido como latte art «vertido libre»). El segundo consiste en dibujar diseños con un instrumento <br>
-         (conocido como etching), con plantillas, polvos y espuma de la leche. El arte del latte se suele ver en un latte, <br>
-          aunque también puede formar parte de la presentación de un capuchino, un café mocha o incluso un espresso macchiato. </p>
-</article>
+            <article id="se_hace" class="preguntas">
+                <h3>¿Cómo se hacen los dibujos?</h3>
+                <p> Hay dos formas de crear estos diseños, <br>
+                    y generalmente se utiliza uno de los métodos, e incluso a veces, una combinación de ambos. <br>
+                    El primer método consiste en ir manipulando el flujo de leche desde una jarra <br>
+                    (conocido como latte art «vertido libre»). El segundo consiste en dibujar diseños con un instrumento <br>
+                    (conocido como etching), con plantillas, polvos y espuma de la leche. El arte del latte se suele ver en un latte, <br>
+                    aunque también puede formar parte de la presentación de un capuchino, un café mocha o incluso un espresso macchiato. </p>
+            </article>
 
-    <a href="#cafeteria"><button id="subir_abajo"><i class="fa fa-hand-o-up" aria-hidden="true" id="icon_subir"></i>Subir</button></a>
+    <a href="#cafeteria"><button id="subir_abajo"><i class="fa fa-hand-o-up" aria-hidden="true" id="icon_subir2"></i>Subir</button></a>
     </div>
-  <footer><span id="footer_name"> © Derechos de autor <strong>Mauro Rodriguez</strong></span></footer>     
+    <footer><span id="footer_name"> © Derechos de autor <strong>Mauro Rodriguez</strong></span></footer>
 </section>   
-                                <!-- FIN SECTION SLIDER -->
- 
 
-                                    <!-- PROMOS -->
-        <section id="promos">
-            <button id="prom1">Café con leche + 2 medialunas $220</button> 
-            <button id="prom2">Café con leche + tostadas de campo $300</button>
-            <button id="prom3">Café con leche + tostado + jugo de naranja $390</button>
-            <button id="volver_atras" onclick="volverAtras()">Volver atrás</button>
-         </section>
-    </article>
+
+                                <!-- FIN SECTION SLIDER -->
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
     <script src="/JS/slider.js"></script>
     <script src="/JS/filtro.js"></script>
     <script src="/JS/main.js"></script>
+    <script src="/JS/interruptor.js"></script>
 </body>
 </html>
