@@ -38,3 +38,8 @@ box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
 
 }
  
+
+.dark #search::placeholder {
+    color: white;
+    font-weight: bold;
+}
