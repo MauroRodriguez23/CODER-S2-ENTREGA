@@ -15,9 +15,9 @@ let contProduct = 0;
 loadEventListenrs();
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
-  
     containerBuyCart.addEventListener('click', deleteProduct);
 }
+ 
 
 function addProduct(e){
     e.preventDefault();

@@ -49,16 +49,51 @@
     
     .img_card {
         width: 500px;
-        height: 500px;
+        height: 400px;
         background-repeat: no-repeat;
         background-size: cover;
+      
     }
 
+    .card {
+        width: 500px;
+        height: 400px;
+        margin-top: 10px;
+       box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+       -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+       -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+   
+       transition: 500ms all;
+        transform: scale(0.9);
+        border-radius: 5%;
+        overflow: hidden;
+        cursor: pointer;
+   }
 
+    .card.abrir{
+        width: 500px;
+        height: 570px;
+        box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
+        -webkit-box-shadow: 1px 10px 23px 7px rgba(247, 243, 243, 0.75);
+        -moz-box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
+         transform: translate(-1%, -1%); 
+    }
+    
+    .card p {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        width: 500px;
+        box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
 
-  
+    }
+ 
            /*EFECTO DE BOTONES DE COMPRAR*/
-           .card a {
+        
+        .btn-add-cart{
             text-decoration: none;
             width: 200px;
             border-radius: 5%;
@@ -76,50 +111,17 @@
             left: 180px;
             top: 50px;
         }
+
         
         .btn-add-cart:focus{
             color: green;
         }
-       
-     
-    .card {
-         width: 500px;
-        height: 400px;
-        box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-        -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-        -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-     
-        transition: 500ms all;
-         transform: scale(0.9);
-         border-radius: 5%;
-         overflow: hidden;
-    }
 
-
-     .card:hover, .filtro_card:hover{
-         cursor: pointer;
-         height: 700px;
+       .btn-add-cart:hover {
         box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
-        -webkit-box-shadow: 1px 10px 23px 7px rgba(247, 243, 243, 0.75);
-        -moz-box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
-         transform: translate(-10%, -1%); 
-    } 
-
+       }
     
-    .card p {
-        color: white;
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        width: 500px;
-        box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-        -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-        -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-
-    }
  
-    
-  
     /* CARACTERISTICAS CARRITO IZQUIERDO */
     
     .img_card img {
@@ -171,3 +173,6 @@
         font-size: 20px;
         color: white;
     }
+
+  
+    

@@ -12,11 +12,9 @@
 }
 
 .dark #section1 {
-    background-color: rgb(36, 34, 34);
-    box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
-    -webkit-box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
-    -moz-box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
-
+    box-shadow: 16px 10px 23px 7px inset rgba(95, 153, 100, 0.75);
+    -webkit-box-shadow: 16px 10px 23px 7px inset rgba(95, 153, 100, 0.75);
+    -moz-box-shadow: 16px 10px 23px 7px inset rgba(95, 153, 100, 0.75);
 }
 
 
@@ -38,6 +36,12 @@ box-shadow: 16px 10px 23px 7px inset rgba(78, 56, 56, 0.75);
 
 }
  
+.dark .slider {
+    box-shadow: 16px 10px 23px 7px rgba(95, 153, 100, 0.75);
+-webkit-box-shadow: 16px 10px 23px 7px rgba(95, 153, 100, 0.75);
+-moz-box-shadow: 16px 10px 23px 7px rgba(95, 153, 100, 0.75);
+
+}
 
 .dark #search::placeholder {
     color: white;
