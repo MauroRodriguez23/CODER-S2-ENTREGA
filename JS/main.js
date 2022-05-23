@@ -4,12 +4,9 @@ let containerBuyCart = document.querySelector('.card-items');
 let precioTotal = document.querySelector('.price-total')
 let contadorProduct = document.querySelector('.count-product');
 
-
 let comprarCosas = [];
 let totalCard = 0;
 let contProduct = 0;
-
-
 
 //functiones
 loadEventListenrs();
@@ -18,7 +15,6 @@ function loadEventListenrs(){
     containerBuyCart.addEventListener('click', deleteProduct);
 }
  
-
 function addProduct(e){
     e.preventDefault();
     if (e.target.classList.contains('btn-add-cart')) {
@@ -45,8 +41,6 @@ Swal.fire({
 }   
 }
 
-
-
 function deleteProduct(e) {
     if (e.target.classList.contains('delete-product')) {
         const deleteId = e.target.getAttribute('data-id');
@@ -63,7 +57,6 @@ function deleteProduct(e) {
         contProduct--;
     }
     loadHtml();
-
 }
 
 function leerTheContent(product){
@@ -74,7 +67,6 @@ function leerTheContent(product){
         id: product.querySelector('a').getAttribute('data-id'),
         cantidad: 1
     }
-
 
     totalCard = parseFloat(totalCard) + parseFloat(infoProduct.price);
     totalCard = totalCard.toFixed(2);
@@ -124,9 +116,6 @@ function loadHtml(){
     });
 }
 
-  
-
-
  function clearHtml(){
     containerBuyCart.innerHTML = '';
  }
@@ -139,5 +128,5 @@ function closeBtn(){
 }
 
   AOS.init({
-      duration: 1000
+      duration: 2000
   });
