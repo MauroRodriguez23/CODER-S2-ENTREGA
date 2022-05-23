@@ -56,7 +56,6 @@
     transform: scale(1.2);
     }
 
-
     #caja_preguntas {
         display: flex;
         justify-content: space-around;
@@ -92,7 +91,6 @@
        
         transition: all 300ms;
         overflow-x: hidden;
-       
     }
 
     .preguntas h3 {
@@ -100,9 +98,12 @@
         color: white;
     }
 
- 
-.preguntas:hover {
-        -webkit-transform: rotateY(0deg) rotateZ(1deg) translateX(1px) translateY(1px) scale(1.1) skewX(10deg);
+#preguntas {
+    transition: all 500ms;
+}    
+
+#preguntas:hover {
+    -webkit-transform: rotateY(0deg) rotateZ(1deg) translateX(1px) translateY(1px) scale(1.1) skewX(10deg);
     -moz-transform: rotateY(0deg) rotateZ(3deg) translateX(2px) translateY(1px) scale(1.2) skewX(5deg);
     -ms-transform: rotateY(0deg) rotateZ(3deg) translateX(2px) translateY(1px) scale(1.2) skewX(5deg);
     -o-transform: rotateY(0deg) rotateZ(3deg) translateX(2px) translateY(1px) scale(1.2) skewX(5deg);
@@ -117,7 +118,6 @@ background-color: transparent;
 
 .preguntas::-webkit-scrollbar-thumb {
 background-color: transparent;
-
 }
     
 
