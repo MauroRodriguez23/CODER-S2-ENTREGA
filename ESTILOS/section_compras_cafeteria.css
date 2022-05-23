@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .filter {
     display: none;
 }
@@ -52,18 +51,16 @@
         height: 400px;
         background-repeat: no-repeat;
         background-size: cover;
-      
     }
 
     .card {
         width: 500px;
         height: 400px;
         margin-top: 10px;
-       box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-       -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-       -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-   
-       transition: 500ms all;
+        -webkit-box-shadow: -4px 7px 13px 1px rgba(247, 243, 243, 0.75);
+        -moz-box-shadow: -4px 7px 13px 1px rgba(247, 243, 243, 0.75);
+        box-shadow: -4px 7px 13px 1px rgba(247, 243, 243, 0.75);
+        transition: 500ms all;
         transform: scale(0.9);
         border-radius: 5%;
         overflow: hidden;
@@ -73,26 +70,63 @@
     .card.abrir{
         width: 500px;
         height: 570px;
-        box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
-        -webkit-box-shadow: 1px 10px 23px 7px rgba(247, 243, 243, 0.75);
-        -moz-box-shadow: 1px 1px 23px 7px rgba(247, 243, 243, 0.75);
+       
          transform: translate(-1%, -1%); 
     }
-    
+
+    .abrir .img_card {
+        opacity: 0.3;
+        transition: all 1s;
+    }
+
+    .abrir .par_cafe p {
+        transform: translateY(0px); 
+        transition: all 500ms;
+    }
+ 
     .card p {
         color: white;
         display: flex;
         justify-content: center;
         font-size: 30px;
         width: 500px;
+       
+    }
+
+    .par_cafe p {
+        position: absolute;
+       background-color: transparent;
+        color: rgb(231, 158, 23);
+        padding: 15px;
+        text-align: center;
+        font-family: family_header;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        transform: translateY(-500px);
+        height: 400px;
+        z-index: 200;
+    }
+
+    .title {
         box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
         -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
         -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
-
     }
- 
+
+    .card .precio1 {
+        transform: translateX(1000px);
+        box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+        -moz-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
+    }
+
+    .abrir .precio1 {
+        transition: 500ms all;
+       transform: translateX(0px);
+    } 
+
            /*EFECTO DE BOTONES DE COMPRAR*/
-        
         .btn-add-cart{
             text-decoration: none;
             width: 200px;
@@ -112,7 +146,6 @@
             top: 50px;
         }
 
-        
         .btn-add-cart:focus{
             color: green;
         }
@@ -133,7 +166,6 @@
     #products-id {
         width: 400px;
         height: 100px;
-      
     }
 
     .item img{
@@ -174,5 +206,4 @@
         color: white;
     }
 
-  
-    
+ 
