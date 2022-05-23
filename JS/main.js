@@ -137,3 +137,7 @@ function loadHtml(){
 function closeBtn(){
      document.getElementById("products-id").style.display = "none";
 }
+
+  AOS.init({
+      duration: 1000
+  });

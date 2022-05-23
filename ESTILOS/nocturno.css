@@ -17,6 +17,13 @@
     -moz-box-shadow: 16px 10px 23px 7px inset rgba(95, 153, 100, 0.75);
 }
 
+.dark .card {
+    transition: 500ms all;
+    box-shadow: 16px 10px 23px 7px rgba(95, 153, 100, 0.75);
+    -webkit-box-shadow: 16px 10px 23px 7px rgba(95, 153, 100, 0.75);
+    -moz-box-shadow: 16px 10px 23px 7px rgba(95, 153, 100, 0.75);
+    transition: 500ms all;
+}
 
 .dark .titulo_preguntas{
     border-bottom: solid rgba(95, 153, 100, 0.75);

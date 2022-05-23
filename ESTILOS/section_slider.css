@@ -38,12 +38,24 @@
 
         /* SLIDER */
     .slider {
-        position: absolute;
+        position: relative;
+        opacity: 0.9;
+        left: 50px;
+        top: 200px;
         border-radius: 50px;
         box-shadow: 16px 10px 23px 7px  rgba(78, 56, 56, 0.75);
         -webkit-box-shadow: 16px 10px 23px 7px  rgba(78, 56, 56, 0.75);
         -moz-box-shadow: 16px 10px 23px 7px  rgba(78, 56, 56, 0.75);
+        transition: 500ms all;
     }
+
+
+    .slider:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.2);
+    }
+
 
     #caja_preguntas {
         display: flex;

@@ -124,7 +124,8 @@ h1 {
 
 #bajar {
     position: relative;
-    top: 1100px;
+    top: 400px;
+    right: 600px;
 }
 
 #subir:hover, #bajar:hover, #bajar2:hover,#subir_abajo:hover {
