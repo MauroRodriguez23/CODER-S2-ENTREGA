@@ -108,6 +108,10 @@
         z-index: 200;
     }
 
+    .card .title {
+        width: 500px;
+    }
+
     .title {
         box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
         -webkit-box-shadow: inset 16px 10px 23px 7px rgba(153,95,95,0.75);
@@ -210,4 +214,47 @@
         color: white;
     }
 
+
+    #botones_cafeteria {
+        position: absolute;
+        right: -200px;
+        top: -50px;
+        height: 1600px;
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        flex-direction: column;
+    }
+
+    #btn_cafeteria {
+        border-radius: 300px;
+        border: none;
+        width: 150px;
+        height: 50px;
+        background-color: transparent;
+        box-shadow: inset 1px 1px 23px 7px rgba(153,95,95,0.75);
+        -webkit-box-shadow: inset 1px 10px 23px 7px rgba(153,95,95,0.75);
+        -moz-box-shadow: inset 1px 1px 23px 7px rgba(153,95,95,0.75);
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #ccc;
+        font-family: family_header;
+        letter-spacing: 1px;
+        transition: all 300ms;
+    }
+
+    #icon_subir, #icon_bajar {
+        position: absolute;
+        opacity: 1;
+        color: #ccc;
+        font-size: 50px;
+    }
+
+    #icon_subir {
+        top: -70px;
+    }
+
+    #icon_bajar {
+        bottom: -70px;
+    }
  

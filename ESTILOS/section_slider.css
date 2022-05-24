@@ -39,6 +39,7 @@
         /* SLIDER */
     .slider {
         position: relative;
+        left: 100px;
         opacity: 0.6;
         top: 200px;
         border-radius: 50px;
@@ -46,6 +47,7 @@
         -webkit-box-shadow: 16px 10px 23px 7px  rgba(78, 56, 56, 0.75);
         -moz-box-shadow: 16px 10px 23px 7px  rgba(78, 56, 56, 0.75);
         transition: 500ms all;
+    
     }
 
 
