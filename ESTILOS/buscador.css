@@ -1,21 +1,12 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 .busca_cafeteria {
     font-size: 35px;
     color: red;
 }
 
-   
 .filtro{
     display: none;
 }
-
-
-        
+  
         /* BUSCADOR */
         #buscador{
             border: solid 4px rgb(247, 244, 244);
@@ -43,8 +34,7 @@
             transition: all 500ms;
           
         }
-        
-        
+          
         #buscador:hover {
             opacity: 1;
             width: 35%;
@@ -83,15 +73,12 @@
         }
         
         
-        
         #icon_search {
             position: absolute;
             margin-left: 980px;
             font-size: 45px;
             color: #ccc;
-            
         }
-        
         
         #buscador input:focus{
             
@@ -104,7 +91,6 @@
             width: 95%;
             height: 70px;
             z-index: 100;
-           
         }
         
         

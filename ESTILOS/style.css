@@ -127,7 +127,7 @@ h1 {
     right: 500px; 
 }
 
-#btn_cafeteria:hover,#bajar:hover, #bajar2:hover,#subir_abajo:hover {
+.btn_cafeteria:hover,#bajar:hover,#subir_abajo:hover {
     box-shadow: inset 26px 35px 23px 17px rgba(153,95,95,0.75);
     -webkit-box-shadow: inset 16px 35px 23px 17px rgba(153,95,95,0.75);
     -moz-box-shadow: inset 26px 35px 33px 17px rgba(153,95,95,0.75);
@@ -138,12 +138,6 @@ h1 {
     cursor: pointer;
 }
 
-
-#bajar2 {
-    position: absolute;
-    left: 90%;
-    top: 80%;
-}
 
 #icon_subir2,#icon_bajar1 {
     position: absolute;
