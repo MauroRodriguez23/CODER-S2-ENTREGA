@@ -11,7 +11,6 @@ let clickCard9 = document.getElementById('card9');
 
 clickCard1.addEventListener('click', () => {
     clickCard1.classList.toggle('abrir');
-   
 });
 
 clickCard2.addEventListener('click', () => {
